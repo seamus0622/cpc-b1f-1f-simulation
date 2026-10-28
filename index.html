@@ -1018,7 +1018,7 @@ input[type=range]::-moz-range-thumb{width:14px;height:14px;border-radius:50%;bac
         <li><i>2</i><b>牆筋補強與開口</b><span>T 字、角隅、開口補強筋；單面模開口</span></li>
         <li><i>3</i><b>止水帶、柱牆封模</b><span>預留筋位置；封板與清潔口；防水毯長度</span></li>
       </ol>
-      <p class="hint">點選右側 ①～③，3D 近看各檢查點（紫色為檢查範圍；橘、紅色為補強筋、搭接區或止水帶）。</p>
+      <p class="hint">點選右側 ①～③，3D 飛到 A1 區的實際構件，以品管網頁的模型近看各檢查點（藍色為補強筋與柱圍束區）。</p>
     </section>
 
     <section class="pg" data-s="q-beam" style="--c:var(--qv)">
@@ -1030,7 +1030,7 @@ input[type=range]::-moz-range-thumb{width:14px;height:14px;border-radius:50%;bac
         <li><i>2</i><b>版筋與樓梯</b><span>版角隅、版開口補強；樓梯模板與鋼筋</span></li>
         <li><i>3</i><b>標高與澆置</b><span>標高、止水帶位置；澆置振動、粉光</span></li>
       </ol>
-      <p class="hint">點選右側 ①～③，3D 近看梁柱接頭、版開口補強與澆置前的標高確認。</p>
+      <p class="hint">點選右側 ①～③，3D 飛到 A1 區 1FL，以品管網頁的模型近看梁柱接頭、版開口補強與澆置前的標高確認。</p>
     </section>
 
     <section class="pg" data-s="q-steel" style="--c:var(--qv)">
@@ -1044,7 +1044,7 @@ input[type=range]::-moz-range-thumb{width:14px;height:14px;border-radius:50%;bac
         <li><i>05</i><b>成品檢核</b><span>尺寸在誤差內、構件無缺漏</span></li>
       </ol>
       <div class="call"><b>為什麼要在工廠確認</b><span>吊裝完成後，現場補燒續接器、剪力釘非常麻煩；構件總長有誤，須運回工廠重新加工，工期延誤</span></div>
-      <p class="hint">點選右側「近看」，3D 看 +250 續接與工廠構件的內隔板焊道。</p>
+      <p class="hint">點選右側「近看」，3D 看 +250 續接，以及品管網頁的 BOX 柱製程模型（蓋板前內隔板焊道）。</p>
     </section>
 
     <section class="pg" data-s="q-docs" style="--c:var(--qv)">
@@ -1538,15 +1538,18 @@ input[type=range]::-moz-range-thumb{width:14px;height:14px;border-radius:50%;bac
         <button type="button" data-stop="2" aria-pressed="false">② 牆筋<br><small>T 字・開口</small></button>
         <button type="button" data-stop="3" aria-pressed="false">③ 封模<br><small>清潔口・止水帶</small></button>
       </div>
-      <div class="qc"><h4><i style="--c:var(--qv)">1</i>放樣與柱筋</h4>
+      <div class="qc" data-stopk="0 1"><h4><i style="--c:var(--qv)">1</i>放樣與柱筋</h4>
         <div class="gr3"><figure class="ph"><img src="img/45_f9bea98a83.jpg" alt="續接、箍筋交錯" width="692" height="438" loading="lazy" decoding="async" style="--ar:3/2"><figcaption>續接、箍筋交錯</figcaption></figure><figure class="ph"><img src="img/45_d9401acd4e.jpg" alt="彎鉤長度不足" width="547" height="347" loading="lazy" decoding="async" style="--ar:3/2"><figcaption>彎鉤長度不足</figcaption></figure><figure class="ph"><img src="img/45_507f1ca960.jpg" alt="配管破壞柱筋" width="900" height="569" loading="lazy" decoding="async" style="--ar:3/2"><figcaption>配管破壞柱筋</figcaption></figure></div>
-        <div class="ck"><div><b>確認</b><ul><li>放樣檢核</li><li>預留筋位置、搭接長度</li><li>續接交錯、箍筋間距</li></ul></div><div class="miss"><b>易漏</b><ul><li>牆預留筋位置、數量與圖不符</li><li>箍筋、繫筋彎鉤長度不足</li><li>機電配管破壞柱筋</li></ul></div></div></div>
-      <div class="qc"><h4><i style="--c:var(--qv)">2</i>牆筋補強與開口</h4>
+        <div class="ck"><div><b>確認</b><ul><li>放樣檢核</li><li>預留筋位置、搭接長度</li><li>續接交錯、箍筋間距</li></ul></div><div class="miss"><b>易漏</b><ul><li>牆預留筋位置、數量與圖不符</li><li>箍筋、繫筋彎鉤長度不足</li><li>機電配管破壞柱筋</li></ul></div></div>
+        <p class="note" data-stopk="1" hidden>3D：A1 區 B1F 柱（27, 11）第 11 天，以品管網頁的柱筋模型放在這支柱上：紅線為放樣；插筋與續接器在圍束區（藍）以上交錯 75 cm；第一箍距版面 5 cm，圍束區 @10、中段 @15，135° 彎鉤四向輪替並加繫筋；頂端橘色為先吊高的梁柱接頭箍筋；柱內配管直通、走在繫筋格內不碰筋；主筋於接頭內 1:6 內彎，接 1F 柱（90 cm）。</p></div>
+      <div class="qc" data-stopk="0 2"><h4><i style="--c:var(--qv)">2</i>牆筋補強與開口</h4>
         <div class="gr3"><figure class="ph"><img src="img/45_6e0fe5f337.jpg" alt="T 字補強" width="900" height="569" loading="lazy" decoding="async" style="--ar:3/2"><figcaption>T 字補強</figcaption></figure><figure class="ph"><img src="img/45_00b105176b.jpg" alt="角隅補強" width="900" height="569" loading="lazy" decoding="async" style="--ar:3/2"><figcaption>角隅補強</figcaption></figure><figure class="ph"><img src="img/45_502b6a3742.jpg" alt="開口補強" width="900" height="569" loading="lazy" decoding="async" style="--ar:3/2"><figcaption>開口補強</figcaption></figure></div>
-        <div class="ck"><div><b>確認</b><ul><li>T 字、角隅、開口補強筋</li><li>單面模開口確認</li></ul></div><div class="miss"><b>易漏</b><ul><li>補強筋未施作或遺漏</li><li>開口模板遺漏</li></ul></div></div></div>
-      <div class="qc"><h4><i style="--c:var(--qv)">3</i>止水帶、柱牆封模</h4>
+        <div class="ck"><div><b>確認</b><ul><li>T 字、角隅、開口補強筋</li><li>單面模開口確認</li></ul></div><div class="miss"><b>易漏</b><ul><li>補強筋未施作或遺漏</li><li>開口模板遺漏</li></ul></div></div>
+        <p class="note" data-stopk="2" hidden>3D：A棟西核電梯牆（X 38.85）第 11 天，雙層 @20：門洞兩側與上方順向補強＋上方兩角斜向補強（藍）、開口邊 U 形收頭筋（黃）；分隔牆、北牆與電梯牆的 T 字補強，梯廳東北角的角隅補強；灰色繫筋為寬止筋（H@5 格、V@4 格）；井道側先立單面模，北側門洞先在模板上以紅框標示開口，其餘兩處已釘開口模板；梯廳牆先綁東北角隅段。</p></div>
+      <div class="qc" data-stopk="0 3"><h4><i style="--c:var(--qv)">3</i>止水帶、柱牆封模</h4>
         <div class="gr3"><figure class="ph"><img src="img/45_d331343ff8.jpg" alt="防水毯與外牆筋" width="1190" height="753" loading="lazy" decoding="async" style="--ar:3/2"><figcaption>防水毯與外牆筋</figcaption></figure><figure class="ph"><img src="img/45_6a02b09261.jpg" alt="牆模封板" width="900" height="569" loading="lazy" decoding="async" style="--ar:3/2"><figcaption>牆模封板</figcaption></figure><figure class="ph"><img src="img/45_bd4f6f0cb9.jpg" alt="清潔口" width="900" height="569" loading="lazy" decoding="async" style="--ar:3/2"><figcaption>清潔口</figcaption></figure></div>
-        <div class="ck"><div><b>確認</b><ul><li>預留筋位置</li><li>封板與清潔口封緊</li><li>防水毯施作長度</li></ul></div><div class="miss"><b>易漏</b><ul><li>預留筋漏插，事後植筋</li><li>清潔口少開，清潔度不佳</li><li>清潔口漏封，澆置漏漿</li></ul></div></div></div>
+        <div class="ck"><div><b>確認</b><ul><li>預留筋位置</li><li>封板與清潔口封緊</li><li>防水毯施作長度</li></ul></div><div class="miss"><b>易漏</b><ul><li>預留筋漏插，事後植筋</li><li>清潔口少開，清潔度不佳</li><li>清潔口漏封，澆置漏漿</li></ul></div></div>
+        <p class="note" data-stopk="3" hidden>3D：A1 北側外牆（厚 35 cm）第 11 天：外側夾板先立，防水毯貼在夾板內面，高於牆筋頂（含彎頭）15～20 cm、接續處搭接 10 cm（黃）；垂直筋頂端 180° 彎頭與牆面平行；−80 PVC 止水帶置中、一半埋入首澆，以工作筋固定；內側封板到一半，底部清潔口一處開啟沖洗，其餘封緊。</p></div>
     </div>
     <div class="sd" data-for="q-beam">
       <div class="seg sticky" role="group" aria-label="3D 檢視">
@@ -1555,15 +1558,18 @@ input[type=range]::-moz-range-thumb{width:14px;height:14px;border-radius:50%;bac
         <button type="button" data-stop="2" aria-pressed="false">② 版筋<br><small>開口補強</small></button>
         <button type="button" data-stop="3" aria-pressed="false">③ 標高<br><small>澆置前確認</small></button>
       </div>
-      <div class="qc"><h4><i style="--c:var(--qv)">1</i>梁模與梁筋</h4>
+      <div class="qc" data-stopk="0 1"><h4><i style="--c:var(--qv)">1</i>梁模與梁筋</h4>
         <div class="gr3"><figure class="ph"><img src="img/46_aa82e12793.jpg" alt="大小梁箍筋加密" width="635" height="349" loading="lazy" decoding="async" style="--ar:3/2"><figcaption>大小梁箍筋加密</figcaption></figure><figure class="ph"><img src="img/46_811ebd462d.jpg" alt="梁柱接頭箍筋" width="718" height="454" loading="lazy" decoding="async" style="--ar:3/2"><figcaption>梁柱接頭箍筋</figcaption></figure><figure class="ph"><img src="img/46_9d0cb20d73.jpg" alt="穿梁套管補強" width="728" height="461" loading="lazy" decoding="async" style="--ar:3/2"><figcaption>穿梁套管補強</figcaption></figure></div>
-        <div class="ck"><div><b>確認</b><ul><li>梁柱接頭箍筋</li><li>大小梁交接箍筋加密</li><li>穿梁套管補強</li></ul></div><div class="miss"><b>易漏</b><ul><li>交接加密未做或數量不足</li><li>梁柱接頭箍筋沒降下來</li><li>套管後放，補強筋沒綁</li></ul></div></div></div>
-      <div class="qc"><h4><i style="--c:var(--qv)">2</i>版筋與樓梯</h4>
+        <div class="ck"><div><b>確認</b><ul><li>梁柱接頭箍筋</li><li>大小梁交接箍筋加密</li><li>穿梁套管補強</li></ul></div><div class="miss"><b>易漏</b><ul><li>交接加密未做或數量不足</li><li>梁柱接頭箍筋沒降下來</li><li>套管後放，補強筋沒綁</li></ul></div></div>
+        <p class="note" data-stopk="1" hidden>3D：A1 區 1FL 梁柱接頭（柱 27, 11）第 46 天：梁端 2H（160 cm）內箍筋 @10、第一支距柱面 5 cm，中段 @15；接頭箍筋 @10 於梁筋穿完後降下；小梁（示意，沿 B1F 內牆線）距小梁面 5 cm 起、兩側各 h/2 範圍 @10 加密（藍）；穿梁套管在 2H 以外、梁深中央，四周斜向、上下水平筋與兩側加箍（藍），一般箍筋避開套管；柱主筋於接頭內 1:6 內彎成 1F 柱預留筋；版上層筋綁紮中。</p></div>
+      <div class="qc" data-stopk="0 2"><h4><i style="--c:var(--qv)">2</i>版筋與樓梯</h4>
         <div class="gr3"><figure class="ph"><img src="img/46_65bbe271ff.jpg" alt="樓梯平台補強" width="820" height="519" loading="lazy" decoding="async" style="--ar:3/2"><figcaption>樓梯平台補強</figcaption></figure><figure class="ph"><img src="img/46_06993a4e4c.jpg" alt="版筋綁紮" width="900" height="569" loading="lazy" decoding="async" style="--ar:3/2"><figcaption>版筋綁紮</figcaption></figure><figure class="ph"><img src="img/46_8e455b9f41.jpg" alt="版開口補強" width="493" height="312" loading="lazy" decoding="async" style="--ar:3/2"><figcaption>版開口補強</figcaption></figure></div>
-        <div class="ck"><div><b>確認</b><ul><li>版角隅、版開口補強</li><li>樓梯模板與鋼筋</li></ul></div><div class="miss"><b>易漏</b><ul><li>開口、配管周邊補強遺漏</li></ul></div></div></div>
-      <div class="qc"><h4><i style="--c:var(--qv)">3</i>標高與澆置</h4>
+        <div class="ck"><div><b>確認</b><ul><li>版角隅、版開口補強</li><li>樓梯模板與鋼筋</li></ul></div><div class="miss"><b>易漏</b><ul><li>開口、配管周邊補強遺漏</li></ul></div></div>
+        <p class="note" data-stopk="2" hidden>3D：A1 區 1FL 版筋上下層 @25；版開口以機電模板盒示意（100×50 cm），四周 x、y 向上下層各 2 支、延伸 70 cm，四角斜向放大一號 1 支（藍）；樓梯間為 B1F→1FL 雙跑樓梯（26 級）的底模、踏步側模、梯段筋，以及平台與上行梯段交接處的補強筋（藍）；此步暫不顯示樓梯間施工樓梯塔。</p></div>
+      <div class="qc" data-stopk="0 3"><h4><i style="--c:var(--qv)">3</i>標高與澆置</h4>
         <div class="gr3"><figure class="ph"><img src="img/46_04aad5ebc7.jpg" alt="標高、止水帶" width="578" height="366" loading="lazy" decoding="async" style="--ar:3/2"><figcaption>標高、止水帶</figcaption></figure><figure class="ph"><img src="img/46_19de8d4405.jpg" alt="蜂窩、未飽漿" width="558" height="354" loading="lazy" decoding="async" style="--ar:3/2"><figcaption>蜂窩、未飽漿</figcaption></figure><figure class="ph"><img src="img/46_c6580514d7.jpg" alt="冷縫" width="473" height="300" loading="lazy" decoding="async" style="--ar:3/2"><figcaption>冷縫</figcaption></figure></div>
-        <div class="ck"><div><b>確認</b><ul><li>標高、止水帶位置</li><li>澆置振動、粉光</li></ul></div><div class="miss"><b>易漏</b><ul><li>蜂窩、冷縫、泌水</li><li>未飽漿，鋼筋裸露</li></ul></div></div></div>
+        <div class="ck"><div><b>確認</b><ul><li>標高、止水帶位置</li><li>澆置振動、粉光</li></ul></div><div class="miss"><b>易漏</b><ul><li>蜂窩、冷縫、泌水</li><li>未飽漿，鋼筋裸露</li></ul></div></div>
+        <p class="note" data-stopk="3" hidden>3D：A1 區 1FL 澆置前（第 50.5 天）：標高器全版均布、約 1.3～1.5 m 一處，依標高器高度抹平；柱預留筋在圍束區包保鮮膜；紅外線水準儀配合標尺複核 +100（紅點為讀數位置）；止水帶位置見「柱牆檢查 ③」。</p></div>
     </div>
     <div class="sd" data-for="q-steel">
       <div class="seg" role="group" aria-label="3D 檢視">
@@ -1578,6 +1584,7 @@ input[type=range]::-moz-range-thumb{width:14px;height:14px;border-radius:50%;bac
         <figure class="ph"><img src="img/47_6dae03669a.jpg" alt="04 缺失焊道複檢｜蓋板前後焊道 NDT" width="840" height="552" loading="lazy" decoding="async" style="--ar:3/2"><figcaption><b>04 缺失焊道複檢</b>｜蓋板前後焊道 NDT</figcaption></figure>
         <figure class="ph"><img src="img/47_0013f5d962.jpg" alt="05 成品檢核｜尺寸在誤差內、構件無缺漏" width="392" height="258" loading="lazy" decoding="async" style="--ar:3/2"><figcaption><b>05 成品檢核</b>｜尺寸在誤差內、構件無缺漏</figcaption></figure>
       </div>
+      <p class="note" data-stopk="1" hidden>3D：C棟 SRC 鋼柱 +250 續接處（橘框）；旁邊為品管網頁的 BOX 柱工廠製程模型（示意，蓋板前）：U 組立、內隔板組焊、剪力釘；蓋板前以 UT 檢查內隔板焊道（紅色為缺失焊道，剷除重焊複驗），合格後才吊放蓋板，之後再做柱體 SAW 與內隔板 ESW。</p>
     </div>
     <div class="sd" data-for="q-docs">
       <figure class="ph"><img src="img/48_c1d1729a00.jpg" alt="三大管制總表｜分項施工計畫、材料送審、施工圖" width="1200" height="679" loading="lazy" decoding="async" style="--ar:16/9"><figcaption><b>三大管制總表</b>｜分項施工計畫、材料送審、施工圖</figcaption></figure>
@@ -2361,34 +2368,37 @@ const CH = [
   { id: 'q-cover', part: 'q', rail: '品管組', cover: true, view: { t: [62, 60, 2], d: 400, az: -40, el: 34 }, day: { loop: [0, DONE2F], dur: 44 }, spin: 1.4, hud: true },
   { id: 'q-frame', part: 'q', rail: '三條線', view: { t: [58, 64, 2], d: 350, az: -22, el: 44 }, day: { loop: [0, DONE2F], dur: 44 }, zonePins: true, hud: true },
   { id: 'q-col', part: 'q', rail: '柱牆檢查', wide: true, view: { t: [28.4, 10.7, -3.3], d: 62, az: 18, el: 44 }, day: { fix: 11 }, formGhost: true,
-    pins: [{ p: [27, 11, -0.6], n: '1', t: '放樣與柱筋', cls: 'num', c: 'var(--qv)' }, { p: [36, 21.6, -0.6], n: '2', t: '牆筋補強與開口', cls: 'num', c: 'var(--qv)' }, { p: [10, -2.8, -2.4], n: '3', t: '止水帶、柱牆封模', cls: 'num', c: 'var(--qv)' }],
+    pins: [{ p: [27, 11, -0.6], n: '1', t: '放樣與柱筋', cls: 'num', c: 'var(--qv)' }, { p: [38.85, 24.6, -0.6], n: '2', t: '牆筋補強與開口', cls: 'num', c: 'var(--qv)' }, { p: [13.3, -2.9, -0.6], n: '3', t: '止水帶、柱牆封模', cls: 'num', c: 'var(--qv)' }],
     stops: [{},
-      { hl: 'qc1', view: { t: [22.8, 16.7, -1.9], d: 7.8, az: -20, el: 16 },
-        pins: [{ p: [22, 17.1, -3.15], n: '1', t: '放樣與柱筋（1:1 示意）', cls: 'num', c: 'var(--qv)' }, { p: [22.98, 16.98, -2.3], t: '續接交錯、搭接長度', s: '預留筋位置、數量依圖', c: '#E8742A', lift: 34 },
-          { p: [22.03, 16.98, -0.62], t: '箍筋、繫筋彎鉤長度', s: '確認箍筋間距', c: '#C99A10', lift: 40 }, { p: [22.76, 16.76, -1.3], t: '機電配管不得破壞柱筋', c: '#B8860B', lift: 26 }] },
-      { hl: 'qc2', view: { t: [22.7, 16.8, -2.3], d: 12, az: -25, el: 18 },
-        pins: [{ p: [20.7, 16.3, -3.15], n: '2', t: '牆筋補強與開口（1:1 示意）', cls: 'num', c: 'var(--qv)' }, { p: [24.0, 17.0, -2.2], t: 'T 字補強', c: '#E8742A', lift: 30 },
-          { p: [21.0, 16.1, -2.2], t: '角隅補強', c: '#E8742A', l: 1, lift: 30 }, { p: [23.08, 16.55, -1.37], t: '開口補強', s: '順向 #5 雙排・斜角 #4 單排 2 支・寬止筋', c: '#E02020', lift: 150 },
-          { p: [22.5, 16.5, -1.95], t: '單面模開口確認', s: '易漏：開口模板遺漏', c: '#E02020', l: 1, lift: 175 }] },
-      { hl: 'qc3', view: { t: [10.3, -2.9, -2.0], d: 20, az: 4, el: 16 },
-        pins: [{ p: [7.4, -2.66, -2.9], n: '3', t: '止水帶、柱牆封模', cls: 'num', c: 'var(--qv)' }, { p: [11.0, -2.66, -3.0], t: '封板與清潔口封緊', c: '#7B3FA0', lift: 30 }, { p: [12.0, -2.7, -0.8], t: '止水帶位置（−80）', c: '#E8742A', lift: 40 },
-          { p: [13.6, -2.9, -0.3], t: '預留筋位置', s: '易漏：預留筋漏插，事後植筋', c: '#B5442A', lift: 70 }, { p: [9.1, -3.12, -1.2], t: '防水毯施作長度', s: '外牆外側（下半部於首澆後施作）', c: '#1E2022', l: 1, lift: 60 }] }] },
+      { hl: 'qc1', formGhost: false, view: { t: [27.0, 11.0, -1.0], d: 10.5, az: -38, el: 12 },
+        pins: [{ p: [26.2, 9.8, -3.19], n: '1', t: '放樣與柱筋', s: 'A1 區 B1F 柱（第 11 天）', cls: 'num', c: 'var(--qv)' }, { p: [26.58, 11.21, -1.35], t: '續接交錯 ≧ 75 cm', s: '續接器高於圍束區 L0', c: '#E8742A', l: 1, lift: 46 },
+          { p: [26.55, 11.0, -0.3], t: '箍筋、繫筋彎鉤', s: '135° 四向交錯、L0 @10', c: '#C99A10', l: 1, lift: 40 }, { p: [27.1, 11.5, -1.87], t: '配管不得破壞柱筋', s: '管徑 ≦ 5 cm、直通不彎折', c: '#B8860B', lift: 30 }] },
+      { hl: 'qc2', formGhost: false, view: { t: [40.4, 23.9, -1.7], d: 12.5, az: 90, el: 36 },
+        pins: [{ p: [40.9, 24.6, -3.15], n: '2', t: '牆筋補強與開口', s: 'A棟西核電梯牆（第 11 天）', cls: 'num', c: 'var(--qv)' }, { p: [38.85, 22.6, -1.4], t: 'T 字補強', s: '30d 彎鉤＋固定鋼筋', c: '#E8742A', lift: 34 },
+          { p: [42.85, 22.55, -1.5], t: '角隅補強', s: 'L 形筋＋4 支垂直筋', c: '#E8742A', l: 1, lift: 40 }, { p: [38.95, 24.45, -0.9], t: '開口補強', s: '順向 #5 雙排・斜角 #4 單排 2 支', c: '#E02020', lift: 75 },
+          { p: [38.74, 25.1, -2.1], t: '單面模開口確認', s: '易漏：開口模板遺漏', c: '#E02020', lift: 40 }] },
+      { hl: 'qc3', formGhost: false, view: { t: [13.4, -2.9, -1.7], d: 10, az: -14, el: 16 },
+        pins: [{ p: [11.7, -2.7, -3.15], n: '3', t: '止水帶、柱牆封模', s: 'A1 北側外牆（第 11 天）', cls: 'num', c: 'var(--qv)' }, { p: [12.545, -2.715, -3.09], t: '封板與清潔口封緊', c: '#7B3FA0', l: 1, lift: 40 },
+          { p: [14.3, -2.925, -0.8], t: '止水帶位置（−80）', s: '置中，一半埋入首澆', c: '#E8742A', lift: 50 },
+          { p: [14.9, -2.81, -0.2], t: '預留筋位置', s: '易漏：預留筋漏插，事後植筋', c: '#B5442A', lift: 40 }, { p: [12.3, -3.09, -0.06], t: '防水毯施作長度', s: '高於牆筋頂 15～20 cm、搭接 10 cm', c: '#1E2022', l: 1, lift: 40 }] }] },
   { id: 'q-beam', part: 'q', rail: '梁版檢查', wide: true, view: { t: [24.5, 35.4, -1.8], d: 62, az: -30, el: 48 }, day: { fix: 46 },
-    pins: [{ p: [22.5, 22, 1.2], n: '1', t: '梁模與梁筋', cls: 'num', c: 'var(--qv)' }, { p: [34.5, 30, 1.2], n: '2', t: '版筋與樓梯', cls: 'num', c: 'var(--qv)' }, { p: [12, 40, 1.2], n: '3', t: '標高與澆置', cls: 'num', c: 'var(--qv)' }],
+    pins: [{ p: [27, 11, 1.2], n: '1', t: '梁模與梁筋', cls: 'num', c: 'var(--qv)' }, { p: [34.4, 31.6, 1.2], n: '2', t: '版筋與樓梯', cls: 'num', c: 'var(--qv)' }, { p: [22.5, 27.5, 1.2], n: '3', t: '標高與澆置', cls: 'num', c: 'var(--qv)' }],
     stops: [{},
-      { hl: 'qb1', view: { t: [24.4, 16.9, 1.3], d: 17, az: -25, el: 30 },
-        pins: [{ p: [22.5, 16.5, 3.05], n: '1', t: '梁模與梁筋（1:1 示意）', cls: 'num', c: 'var(--qv)' }, { p: [22.0, 16.05, 1.3], t: '梁柱接頭箍筋', s: '易漏：箍筋沒降下來', c: '#7B3FA0', l: 1, lift: 70 },
-          { p: [25.35, 16.75, 1.82], t: '大小梁交接箍筋加密', s: '小梁兩側各 h/2、距小梁面 5 cm', c: '#E8742A', lift: 96 }, { p: [24.05, 16.72, 1.42], t: '穿梁套管補強', s: '易漏：套管後放，補強筋沒綁', c: '#E02020', lift: 120 }] },
-      { hl: 'qb2', formGhost: true, view: { t: [34.8, 28.7, 0.1], d: 21.5, az: -20, el: 50 },
-        pins: [{ p: [33.0, 22.35, 1.0], n: '2', t: '樓梯開口：版角隅、版開口補強', cls: 'num', c: 'var(--qv)' }, { p: [36.0, 32.7, 1.0], t: '開口、配管周邊補強勿遺漏', c: '#E8742A', l: 1, lift: 50 }] },
-      { day: 50.5, hl: 'qb3', view: { t: [22.8, 28.2, 1.5], d: 14.9, az: -32, el: 30 },
-        pins: [{ p: [21.0, 29.0, 2.6], n: '3', t: '標高確認（A棟 1FL +100）', s: '止水帶位置見「柱牆檢查 ③」', cls: 'num', c: 'var(--qv)' }, { p: [25.0, 24.0, 1.05], t: '澆置振動、粉光', s: '易漏：蜂窩、冷縫、泌水', c: 'var(--ink2)', l: 1, lift: 50 }] }] },
+      { hl: 'qb1', view: { t: [29.0, 11.0, 0.45], d: 12, az: 45, el: 38 },
+        pins: [{ p: [30.0, 13.4, 0.98], n: '1', t: '梁模與梁筋', s: 'A1 區 1FL 梁柱接頭（第 46 天）', cls: 'num', c: 'var(--qv)' }, { p: [26.55, 10.55, 0.62], t: '梁柱接頭箍筋', s: '易漏：箍筋沒降下來', c: '#7B3FA0', lift: 60 },
+          { p: [31.4, 11.25, 0.92], t: '大小梁交接箍筋加密', s: '小梁兩側各 h/2、距小梁面 5 cm', c: '#E8742A', l: 1, lift: 18 }, { p: [29.75, 11.33, 0.55], t: '穿梁套管補強', s: '易漏：套管後放，補強筋沒綁', c: '#E02020', l: 1, lift: 90 }] },
+      { hl: 'qb2', hideCoreSt: 0, view: { t: [34.4, 31.0, -0.2], d: 13, az: 10, el: 55 },
+        pins: [{ p: [34.0, 34.5, 1.0], n: '2', t: '版筋與樓梯', s: 'A1 區 1FL・A棟西核安全梯（第 46 天）', cls: 'num', c: 'var(--qv)' }, { p: [34.95, 33.7, 0.96], t: '版開口補強（模板盒示意）', s: 'x、y 上下層各 2 支＋斜向放大一號', c: '#E8742A', l: 1, lift: 50 },
+          { p: [33.8, 30.6, -1.6], t: '樓梯模板與鋼筋', s: '級高、級深、踏步數', c: '#9C7A3C', l: 1, lift: 40 }, { p: [34.5, 28.2, -1.07], t: '平台補強筋', s: '平台與梯段交接處', c: '#E02020', lift: 40 }] },
+      { day: 50.5, hl: 'qb3', view: { t: [22.6, 27.6, 1.0], d: 13.5, az: 28, el: 30 },
+        pins: [{ p: [23.6, 31.6, 1.02], n: '3', t: '標高與澆置', s: 'A1 區 1FL 澆置前（第 50.5 天）', cls: 'num', c: 'var(--qv)' }, { p: [24.875, 29.75, 1.3], t: '標高器 @1.2～1.5 m', s: '依標高器高度抹平', c: '#C99A10', l: 1, lift: 40 },
+          { p: [24.45, 29.1, 2.42], t: '紅外線水準儀＋標尺', s: '複核 A棟 1FL +100', c: '#E02020', l: 1, lift: 40 }, { p: [18.3, 22.4, 1.2], t: '柱預留筋包保鮮膜', s: '圍束區，避免澆置汙染', c: '#3E7CB1', lift: 30 }] }] },
   { id: 'q-steel', part: 'q', rail: '鋼構廠驗', wide: true, view: { t: [6, 84, 2], d: 120, az: -40, el: 34 }, day: { loop: [118.5, 125.8], dur: 34 }, hud: true,
     pins: [{ p: [...W2(24.7, 32.4), 2.5], t: 'SRC 鋼柱 16 支', s: 'B1 預吊，+250 處續接', c: 'var(--steel)', l: 1 }, { p: [...W2(20, 12.3), 6.2], t: '鋼梁・續接器・剪力釘', s: '續接器少一顆，梁主筋就鎖不上', c: 'var(--steel)' }],
     stops: [{},
-      { day: 117.5, hud: false, hl: 'qs1', view: { t: [15.8, 68.3, 1.9], d: 17.3, az: -42, el: 24 },
-        pins: [{ p: [18, 66.95, 2.75], t: 'SRC 鋼柱 +250 續接', s: '總長確認：柱底、柱頂尺寸才不會落差', c: '#E0782A', lift: 50 }, { p: [14.7, 69.1, 2.2], t: '內隔板焊道', s: '蓋板前 NDT 檢驗', c: '#E02020', lift: 80 },
-          { p: [13.3, 69.6, 1.9], t: '工廠構件示意', s: '尺寸在誤差內、構件無缺漏', c: 'var(--steel)', l: 1, lift: 40 }] }] },
+      { day: 117.5, hud: false, hl: 'qs1', view: { t: [15.6, 68.4, 2.2], d: 13.5, az: -40, el: 22 },
+        pins: [{ p: [18, 66.95, 2.75], t: 'SRC 鋼柱 +250 續接', s: '總長確認：柱底、柱頂尺寸才不會落差', c: '#E0782A', lift: 50 }, { p: [14.54, 68.9, 2.62], t: '內隔板焊道', s: '蓋板前 UT；缺失剷除重焊', c: '#E02020', lift: 80 },
+          { p: [12.25, 70.0, 2.4], t: '工廠構件示意', s: '尺寸在誤差內、構件無缺漏', c: 'var(--steel)', l: 1, lift: 40 }] }] },
   { id: 'q-docs', part: 'q', rail: '查核文件', wide: true, view: { t: [84, 2, 0], d: 150, az: 160, el: 38 }, day: { fix: 80 },
     pins: [{ p: [87, -14.6, 3.2], t: '工務所', s: '依三大管制總表建檔', c: 'var(--qv)' }] },
   { id: 'q-rfid', part: 'q', rail: 'RFID試體', wide: true, view: { t: [36, 6, 0], d: 150, az: -20, el: 46 }, day: { loop: [51.05, 51.95], dur: 30 }, hud: true,
@@ -2410,7 +2420,7 @@ function useStop(c, k) { const s = c.stops[k]; c.stopI = k;
   if (!c.stopKeys) { c.stopKeys = new Set(); c.stops.forEach(q => Object.keys(q).forEach(key => c.stopKeys.add(key))); c.base = {}; c.stopKeys.forEach(key => { c.base[key] = c[key]; }); }
   c.stopKeys.forEach(key => { c[key] = key in s ? (key === 'day' && typeof s.day === 'number' ? { fix: s.day } : s[key]) : c.base[key]; });
   const sd = document.querySelector(`.sd[data-for="${c.side || c.id}"]`);
-  if (sd) { sd.querySelectorAll('[data-stop]').forEach(b => b.setAttribute('aria-pressed', String(+b.dataset.stop === k))); sd.querySelectorAll('[data-stopk]').forEach(el => { el.hidden = +el.dataset.stopk !== k; }); } }
+  if (sd) { sd.querySelectorAll('[data-stop]').forEach(b => b.setAttribute('aria-pressed', String(+b.dataset.stop === k))); sd.querySelectorAll('[data-stopk]').forEach(el => { el.hidden = !el.dataset.stopk.split(' ').map(Number).includes(k); }); } }
 CH.forEach(c => { if (c.stops) useStop(c, 0); });
 const ALIAS = { cover: 'm-cover', start: 'p-over' };
 
@@ -2664,6 +2674,146 @@ function buildScene() {
   const lam = (c, o = {}) => new THREE.MeshLambertMaterial(Object.assign({ color: c }, o));
   const std = (c, r = 0.9, m = 0, o = {}) => new THREE.MeshStandardMaterial(Object.assign({ color: c, roughness: r, metalness: m }, o));
   const WET = new THREE.Color('#5E6469'), CURED = new THREE.Color('#BCBEB8');
+  /* ---------- 鋼筋表現（對照「分項工程品管事項」品管網頁標準）----------
+     示意構件的鋼筋籠不再用貼圖拉伸，改以公尺座標程序化繪製，任何柱高、牆長都維持同一套間距：
+     柱：主筋每面 5 支（16 支）；第一箍離版面 5 cm；圍束區 L0 = max(柱寬, Hn/6, 45 cm) 內 @10、中段 @15；梁柱接頭 @10（梁筋穿完後降下，之前先吊高在版面上方）；
+         續接器上下交錯（B1F 離版 1.1／1.85 m、1F 離版 1.0／1.75 m，相差 75 cm，皆高於圍束區）；上層預留筋長短交錯（1.0／1.75 m）；
+         中庭下短柱（Hn 2.6 m，兩端圍束區之間放不下 75 cm 交錯）改為筏基一次預留全長主筋、不設續接器（info.w = 2）
+         遠看（每像素 > 3.5 cm）箍筋改以 @30 示意，避免摩爾紋；近看才分出圍束區與 2H 加密
+     牆：雙層 @20；下半部澆置後只留出搭接段　梁：端部 2H 內 @10、中段 @15，上下主筋＋腰筋　插筋：柱 16 支長短交錯、牆 @20 雙層 */
+  const QCUT = (() => {   // 品管近看：在指定範圍內挖空示意構件（貼圖筋籠、模板、樓版筋網），由細部模型取代
+    const U = { qcOn: { value: 0 }, qcMa: { value: 0 }, qcMb: { value: 0 }, qcA0: { value: new THREE.Vector3() }, qcA1: { value: new THREE.Vector3() }, qcB0: { value: new THREE.Vector3() }, qcB1: { value: new THREE.Vector3() } };
+    const GRP = { CAGE: 1, FORM: 2, DECK: 4, BEAM: 8, SLABR: 16 };
+    const patch = (mat, grp) => {
+      const prev = mat.onBeforeCompile, prevKey = mat.userData.rbKey || '';
+      mat.defines = Object.assign({}, mat.defines || {}, { QC_GRP: grp.toFixed(1) });
+      mat.onBeforeCompile = (sh, r) => {
+        if (prev) prev(sh, r);
+        Object.assign(sh.uniforms, U);
+        sh.vertexShader = 'varying vec3 vQcW;\n' + sh.vertexShader.replace('#include <project_vertex>', `#include <project_vertex>
+  vec4 qcW = vec4( transformed, 1.0 );
+  #ifdef USE_INSTANCING
+  qcW = instanceMatrix * qcW;
+  #endif
+  vQcW = ( modelMatrix * qcW ).xyz;`);
+        sh.fragmentShader = 'varying vec3 vQcW;\nuniform float qcOn, qcMa, qcMb;\nuniform vec3 qcA0, qcA1, qcB0, qcB1;\n' + sh.fragmentShader.replace('void main() {', `void main() {
+  if ( qcOn > 0.5 ) {
+    if ( mod( floor( qcMa / QC_GRP ), 2.0 ) > 0.5 && all( greaterThan( vQcW, qcA0 ) ) && all( lessThan( vQcW, qcA1 ) ) ) discard;
+    if ( mod( floor( qcMb / QC_GRP ), 2.0 ) > 0.5 && all( greaterThan( vQcW, qcB0 ) ) && all( lessThan( vQcW, qcB1 ) ) ) discard;
+  }`);
+      };
+      mat.customProgramCacheKey = () => 'qc' + grp + '|' + prevKey;
+      mat.needsUpdate = true; return mat; };
+    const depth = (grp) => patch(new THREE.MeshDepthMaterial({ depthPacking: THREE.RGBADepthPacking }), grp);
+    // boxes: [[X0, Y0, Z0, X1, Y1, Z1, mask], …] in plan coordinates (up to two)
+    const set = (boxes) => { U.qcOn.value = boxes && boxes.length ? 1 : 0; U.qcMa.value = 0; U.qcMb.value = 0; if (!boxes) return;
+      boxes.slice(0, 2).forEach((b, i) => { const a = V(b[0], b[1], b[2]), c = V(b[3], b[4], b[5]); const lo = new THREE.Vector3(Math.min(a.x, c.x), Math.min(a.y, c.y), Math.min(a.z, c.z)), hi = new THREE.Vector3(Math.max(a.x, c.x), Math.max(a.y, c.y), Math.max(a.z, c.z));
+        if (i === 0) { U.qcA0.value.copy(lo); U.qcA1.value.copy(hi); U.qcMa.value = b[6]; } else { U.qcB0.value.copy(lo); U.qcB1.value.copy(hi); U.qcMb.value = b[6]; } }); };
+    return { U, GRP, patch, depth, set };
+  })();
+
+  const RBM = (() => {
+    const COL_R = 'vec3(0.61, 0.29, 0.15)', COL_S = 'vec3(0.46, 0.53, 0.58)';
+    const VERT = `#include <begin_vertex>
+  vec3 rbS = vec3( 1.0 );
+  #ifdef USE_INSTANCING
+  rbS = vec3( length( instanceMatrix[ 0 ].xyz ), length( instanceMatrix[ 1 ].xyz ), length( instanceMatrix[ 2 ].xyz ) );
+  #endif
+  vRS = rbS; vRL = position * rbS; vRN = normal;
+  #ifdef RB_INFO
+  vInfo = aInfo;
+  #endif`;
+    const HEAD = 'varying vec3 vRL;\nvarying vec3 vRN;\nvarying vec3 vRS;\n#ifdef RB_INFO\nvarying vec4 vInfo;\n#endif\n';
+    // distance from y to the nearest line of a ladder starting at y0 with spacing st
+    const LIB = `float rbLad( float y, float y0, float st ) { return abs( fract( ( y - y0 ) / st + 0.5 ) - 0.5 ) * st; }
+`;
+    const FRAG = {
+      // 柱：主筋 5 支／面＋續接器、箍筋（第一箍 5 cm、L0 @10、中段 @15、接頭 @10 或先吊高 5 支）、上層預留筋長短交錯；dowel 模式只畫插筋
+      col: `vec3 an = abs( vRN ); if ( an.y > 0.5 ) discard;
+  float u = an.x > 0.5 ? vRL.z : vRL.x, hb = ( an.x > 0.5 ? vRS.z : vRS.x ) * 0.5, y = vRL.y;
+  float fwU = fwidth( u ), fwY = fwidth( y );
+  #ifdef RB_DOWEL
+  float Hn = 0.0, sTop = 0.0, cutH = -1.0, dl = 0.0;
+  #else
+  float Hn = vInfo.x, sTop = vInfo.y, dl = vInfo.w, cutH = rbPhase > 1.5 ? sTop : ( rbPhase > 0.5 ? vInfo.z : -1.0 );
+  #endif
+  if ( y < cutH ) discard;
+  float o = hb - 0.103, wB = max( 0.016, 0.5 * fwU ), wC = max( 0.034, 0.5 * fwU );
+  float pat = 0.0, cp = 0.0;
+  for ( int k = 0; k < 5; k++ ) {
+    if ( fwU > 0.07 && k != 0 && k != 4 ) continue;
+    float c = -o + float( k ) * o * 0.5, du = abs( u - c );
+    bool ev = mod( float( k ), 2.0 ) < 0.5;
+    #ifdef RB_DOWEL
+    float top = ev ? rbLow.x : rbLow.y;
+    if ( du < wB && y <= top ) pat = 1.0;
+    #else
+    float top = sTop + ( dl > 0.5 && dl < 1.5 ? ( ev ? rbNext.x : rbNext.y ) : 0.0 );
+    if ( du < wB && y <= top ) pat = 1.0;
+    float yc = ev ? rbLow.x : rbLow.y;
+    if ( dl < 1.5 && du < wC && y > yc - 0.05 && y < yc + 0.08 ) cp = 1.0;
+    #endif
+  }
+  #ifndef RB_DOWEL
+  if ( abs( u ) < hb - 0.03 && y >= 0.0 ) {
+    float sx = 2.0 * hb - 0.05, L0 = max( max( sx, Hn / 6.0 ), 0.45 ), wH = max( 0.011, 0.5 * fwY ), d = 1.0;
+    if ( fwY > 0.035 ) { if ( y <= sTop ) d = rbLad( y, 0.05, 0.3 ); }
+    else if ( y <= Hn ) {
+      if ( y < L0 ) d = rbLad( y, 0.05, 0.1 ); else if ( y > Hn - L0 ) d = rbLad( y, Hn - 0.05, 0.1 ); else d = rbLad( y, L0 + 0.1, 0.15 );
+    } else if ( y <= sTop ) { if ( rbJoint > 0.5 ) d = rbLad( y, Hn + 0.05, 0.1 ); }
+    else if ( rbJoint < 0.5 && dl > 0.5 && dl < 1.5 && y > sTop + 0.175 && y < sTop + 0.425 ) d = rbLad( y, sTop + 0.2, 0.05 );
+    if ( d < wH ) pat = 1.0;
+  }
+  #endif
+  if ( pat < 0.5 && cp < 0.5 ) discard;
+  diffuseColor.rgb = cp > 0.5 ? ${COL_S} : ${COL_R};`,
+      // 牆：雙層 @20（只畫兩個長面）；下半部時水平筋只到澆置面，垂直筋多出搭接段；dowel 模式只畫垂直筋
+      wall: `vec3 an = abs( vRN ); if ( an.y > 0.5 || an.x > 0.5 ) discard;
+  float u = vRL.x + vRS.x * 0.5, y = vRL.y, fwU = fwidth( u ), fwY = fwidth( y );
+  #ifdef RB_INFO
+  if ( rbPhase > 0.5 && y < vInfo.z ) discard;
+  #endif
+  float stV = fwU > 0.05 ? 0.6 : 0.2, stH = fwY > 0.05 ? 0.6 : 0.2;
+  float pat = 0.0;
+  if ( rbLad( u, 0.1, stV ) < max( 0.011, 0.5 * fwU ) ) pat = 1.0;
+  #ifndef RB_DOWEL
+  if ( y <= vRS.y - rbLap + 0.02 && rbLad( y, 0.1, stH ) < max( 0.011, 0.5 * fwY ) ) pat = 1.0;
+  #endif
+  if ( pat < 0.5 ) discard;
+  diffuseColor.rgb = ${COL_R};`,
+      // 梁：側面＝箍筋（端部 2H 內 @10、中段 @15）＋上下主筋、腰筋；上下面＝4 支主筋＋箍筋
+      beam: `vec3 an = abs( vRN ); if ( an.x > 0.5 ) discard;
+  float L = vRS.x, uu = vRL.x + L * 0.5, y = vRL.y, fwU = fwidth( uu );
+  float a = min( uu, L - uu ), st = fwU > 0.035 ? 0.3 : ( a < 1.6 ? 0.1 : 0.15 );
+  float ds = a < 1.6 && fwU <= 0.035 ? rbLad( a, 0.05, 0.1 ) : rbLad( uu, L * 0.5, st );
+  float pat = ds < max( 0.009, 0.5 * fwU ) ? 1.0 : 0.0;
+  if ( an.z > 0.5 ) { float fwY = fwidth( y ), wl = max( 0.016, 0.5 * fwY ); if ( abs( y - 0.035 ) < wl || abs( y - ( vRS.y - 0.035 ) ) < wl || abs( y - vRS.y * 0.5 ) < max( 0.011, 0.5 * fwY ) ) pat = 1.0; }
+  else { float v = vRL.z, hw = vRS.z * 0.5 - 0.035, fwV = fwidth( v ), wl = max( 0.016, 0.5 * fwV );
+    if ( abs( abs( v ) - hw ) < wl || abs( abs( v ) - hw / 3.0 ) < wl ) pat = 1.0; }
+  if ( pat < 0.5 ) discard;
+  diffuseColor.rgb = ${COL_R};`,
+    };
+    const make = (kind, o = {}) => {
+      const m = new THREE.MeshLambertMaterial({ color: 0xffffff, side: THREE.DoubleSide, clippingPlanes: o.clip || null });
+      m.extensions = { derivatives: true };   // fwidth() on WebGL1 devices
+      m.defines = {}; if (o.info) m.defines.RB_INFO = ''; if (o.dowel) m.defines.RB_DOWEL = '';
+      m.userData.u = { rbPhase: { value: 0 }, rbJoint: { value: 0 }, rbLow: { value: new THREE.Vector2(1.1, 1.85) }, rbNext: { value: new THREE.Vector2(1.0, 1.75) }, rbLap: { value: 0 } };
+      if (o.low) m.userData.u.rbLow.value.set(o.low[0], o.low[1]);
+      m.userData.rbKey = 'rb-' + kind;
+      m.onBeforeCompile = (sh) => {
+        Object.assign(sh.uniforms, m.userData.u);
+        sh.vertexShader = HEAD + '#ifdef RB_INFO\nattribute vec4 aInfo;\n#endif\n' + sh.vertexShader.replace('#include <begin_vertex>', VERT);
+        sh.fragmentShader = HEAD + 'uniform float rbPhase, rbJoint, rbLap;\nuniform vec2 rbLow, rbNext;\n' + LIB + sh.fragmentShader.replace('#include <color_fragment>', '#include <color_fragment>\n  ' + FRAG[kind]);
+      };
+      m.customProgramCacheKey = () => m.userData.rbKey;
+      if (o.carve) QCUT.patch(m, o.carve);
+      return m; };
+    // unit box without its top face (beam forms are open on top so the beam cage shows between the slab mats)
+    const openTop = (() => { const g = new THREE.BoxGeometry(1, 1, 1); g.translate(0, 0.5, 0); const idx = Array.from(g.index.array); g.setIndex([...idx.slice(0, 12), ...idx.slice(18)]); g.clearGroups(); return g; })();
+    return { make, openTop };
+  })();
+  // 短柱：Hn − 2·L0 放不下 75 cm 交錯＋續接器 → 筏基一次預留全長主筋（不設續接器）
+  const SHORTC = (c) => { if (c.src) return false; const Hn = c.top + 2.4, L0 = Math.max(c.s, Hn / 6, 0.45); return Hn - 2 * L0 < 0.88; };
   const M = {
     raft: lam('#8F928B'), pc: lam('#85877F'), soil: lam('#8A7356'), rebar: lam('#9C4A26'),
     ply: lam('#FFFFFF', { map: texPly }), plyGhost: lam('#D6B677', { transparent: true, opacity: 0.4, depthWrite: false }),
@@ -2683,6 +2833,7 @@ function buildScene() {
     trunk: lam('#6B5238'), leaf: lam('#5E8A4A'), palm: lam('#6F9A4E'),
   };
   const concMat = () => std(CURED.clone(), 0.85, 0);
+  QCUT.patch(M.ply, QCUT.GRP.FORM); QCUT.patch(M.plyGhost, QCUT.GRP.FORM); const FORM_DEPTH = QCUT.depth(QCUT.GRP.FORM), BEAM_DEPTH = QCUT.depth(QCUT.GRP.BEAM);
 
   /* ---------- geometry helpers ---------- */
   const shape = (poly, holes = []) => { const s = new THREE.Shape(poly.map(p => new THREE.Vector2(p[0] - CX, -(p[1] - CY)))); holes.forEach(h => s.holes.push(new THREE.Path(h.map(p => new THREE.Vector2(p[0] - CX, -(p[1] - CY)))))); return s; };
@@ -2868,14 +3019,18 @@ function buildScene() {
       if (B.length > 1 && B.every(b => b.shared)) { const e0 = [Math.min(...ext.map(e => e[0])), Math.max(...ext.map(e => e[1]))]; ext.forEach(e => { e[0] = e0[0]; e[1] = e0[1]; }); }
       items.forEach(it => { const e = ext[it.bi]; it.key = (dot2(B[it.bi].dirP, [it.X, it.Y]) - e[0]) / Math.max(1, e[1] - e[0]); });
       items.sort((a, b) => a.key - b.key); }
-    const cage = inst(unitBox, opts.wall ? M.cageW : M.cage, n), form = inst(unitBox, M.ply, n), conc = inst(unitBox, concMat(), n);
+    const cgeo = unitBox.clone(), info = new Float32Array(n * 4); cgeo.setAttribute('aInfo', new THREE.InstancedBufferAttribute(info, 4));
+    const cmat = RBM.make(opts.wall ? 'wall' : 'col', { info: true, carve: QCUT.GRP.CAGE, low: opts.low }), CU = cmat.userData.u;
+    const cage = inst(cgeo, cmat, n), form = inst(unitBox, M.ply, n), conc = inst(unitBox, concMat(), n); cage.castShadow = false; form.customDepthMaterial = FORM_DEPTH;
     const core = opts.core ? inst(unitBox, M.steel, n) : null;
-    const T = items.map((it) => ({ p: new THREE.Vector3(it.x, 0, it.z), q: new THREE.Quaternion().setFromAxisAngle(UP, it.yaw || 0), sx: it.sx, sz: it.sz, h: it.h, hl: clamp((sched.zj - base) / it.h, 0.25, 0.92), core: it.core, X: it.X, Y: it.Y, bi: it.bi || 0 }));
+    const T = items.map((it) => ({ p: new THREE.Vector3(it.x, 0, it.z), q: new THREE.Quaternion().setFromAxisAngle(UP, it.yaw || 0), sx: it.sx, sz: it.sz, h: it.h, hl: clamp((sched.zj - base) / it.h, 0.25, 0.92), core: it.core, X: it.X, Y: it.Y, bi: it.bi || 0, th: it.th || 0, dl: it.cont ? 2 : (it.dl ? 1 : 0) }));
+    T.forEach((t, i) => { const sTop = t.h + t.th; info.set(opts.wall ? [0, 0, t.h * t.hl, 0] : [sTop - 0.8, sTop, t.h * t.hl, t.dl], i * 4); });
+    const cageH = (t, ph) => opts.wall ? (ph === 'L' ? Math.min(t.h, t.h * t.hl + 0.6) : t.h) : t.h + t.th + (t.dl === 1 ? 1.75 : 0);   // 柱：全高筋籠＋上層預留筋（短柱 dl = 2：全長主筋、無續接器）；牆：下半部＋搭接段
     const tpv = new THREE.Vector3(); let fPh = '', cPh = '';
     const setForm = (ph) => { if (fPh === ph) return; fPh = ph; T.forEach((t, i) => { const w = opts.wall ? 0.12 : 0.16, y0 = ph === 'U' ? t.h * t.hl - 0.15 : 0, hh = ph === 'U' ? t.h * (1 - t.hl) + 0.2 : t.h * t.hl + 0.05;
       mk.compose(tpv.copy(t.p).setY(y0), t.q, ms.set(t.sx + w, hh, t.sz + 0.16)); form.setMatrixAt(i, mk); }); form.instanceMatrix.needsUpdate = true; };
-    const setCage = (ph) => { if (cPh === ph) return; cPh = ph; T.forEach((t, i) => { mk.compose(t.p, t.q, ms.set(t.sx + 0.05, ph === 'L' ? Math.min(t.h, t.h * t.hl + 0.6) : t.h, t.sz + 0.05)); cage.setMatrixAt(i, mk); }); cage.instanceMatrix.needsUpdate = true; };
-    T.forEach((t, i) => { mk.compose(t.p, t.q, ms.set(t.sx + 0.05, t.h, t.sz + 0.05)); cage.setMatrixAt(i, mk);
+    const setCage = (ph) => { if (cPh === ph) return; cPh = ph; T.forEach((t, i) => { mk.compose(t.p, t.q, ms.set(t.sx + 0.05, cageH(t, ph), t.sz + 0.05)); cage.setMatrixAt(i, mk); }); cage.instanceMatrix.needsUpdate = true; };
+    T.forEach((t, i) => { mk.compose(t.p, t.q, ms.set(t.sx + 0.05, cageH(t, 'F'), t.sz + 0.05)); cage.setMatrixAt(i, mk);
       mk.compose(t.p, t.q, ms.set(t.sx + (opts.wall ? 0.12 : 0.16), t.h + 0.05, t.sz + 0.16)); form.setMatrixAt(i, mk);
       mk.compose(t.p, t.q, ms.set(t.sx, t.h, t.sz)); conc.setMatrixAt(i, mk);
       // SRC box column (S10-6 ①): anchored on the raft at B1FL, it runs through the 1FL slab and stands up to the +250 splice
@@ -2886,8 +3041,10 @@ function buildScene() {
       if (opts.xrHide && XR) { [cage, form, conc, core].forEach(o => o && (o.visible = false)); return; }
       const r = prog(d, sched.col), f = prog(d, sched.colForm), p = prog(d, sched.pourV);
       const upS = sched.split ? sched.upper[0] : 1e9;
-      if (d < upS) { setCage('L'); cage.visible = d >= sched.col[0]; cage.count = Math.max(1, Math.ceil(n * r)); }
-      else { setCage('F'); cage.visible = d < sched.upper[1] + 0.2; cage.count = Math.max(1, Math.ceil(n * prog(d, [sched.upper[0], sched.upper[0] + (sched.upper[1] - sched.upper[0]) * 0.5]))); }
+      if (!opts.wall) { setCage('F'); cage.visible = d >= sched.col[0] && d < (opts.hideAt || 1e9); cage.count = Math.max(1, Math.ceil(n * r));   // 柱筋：首澆後只留 −80 以上，續澆後只留上層預留筋
+        CU.rbPhase.value = d >= sched.pourV[1] ? 2 : (sched.split && d >= sched.split[1] ? 1 : 0); CU.rbJoint.value = d >= sched.rebar[0] + 4 ? 1 : 0; }
+      else if (d < upS) { setCage('L'); CU.rbLap.value = 0.6; CU.rbPhase.value = sched.split && d >= sched.split[1] ? 1 : 0; cage.visible = d >= sched.col[0]; cage.count = Math.max(1, Math.ceil(n * r)); }
+      else { setCage('F'); CU.rbLap.value = 0; CU.rbPhase.value = 1; cage.visible = d < sched.upper[1] + 0.2; cage.count = Math.max(1, Math.ceil(n * prog(d, [sched.upper[0], sched.upper[0] + (sched.upper[1] - sched.upper[0]) * 0.5]))); }
       if (core) { core.visible = d >= (opts.coreW ? opts.coreW[0] : sched.col[0]); core.count = Math.max(1, Math.ceil(n * prog(d, opts.coreW || sched.col))); }
       if (sched.split && d < upS) { setForm('L'); form.visible = d >= sched.colForm[0] && d < sched.split[1] + 1.5; form.count = Math.max(1, Math.ceil(n * f)); }   // 下半部模：首澆後 1.5 天內拆除
       else if (sched.split) { setForm('U'); form.visible = d < sched.strip; form.count = Math.max(1, Math.ceil(n * prog(d, sched.upper))); }
@@ -2923,6 +3080,7 @@ function buildScene() {
     const deckMat = (opts.deckMat || M.ply).clone(); deckMat.clippingPlanes = [pDeck]; deckMat.clipShadows = true; deckMat.side = THREE.DoubleSide;
     const deckGhost = deckMat.clone(); deckGhost.clippingPlanes = [pDeck]; deckGhost.transparent = true; deckGhost.opacity = 0.3; deckGhost.depthWrite = false;
     const rebarMat = new THREE.MeshLambertMaterial({ map: texRebarGrid, transparent: true, alphaTest: 0.45, side: THREE.DoubleSide, clippingPlanes: [pRebar] });
+    QCUT.patch(deckMat, QCUT.GRP.DECK); QCUT.patch(deckGhost, QCUT.GRP.DECK); QCUT.patch(rebarMat, QCUT.GRP.SLABR);
     // concrete: one sweep per pump band (band cut + pour face). Each band starts at its far side and finishes at its own pump.
     const BD = (opts.bands || [{ cut: null, dirP: dir }]).map(b => { const perp = [-b.dirP[1], b.dirP[0]];
       const polys = pieces.map(pc => b.cut ? G.clipHalf(pc.poly, b.cut[0], b.cut[1]) : pc.poly).filter(p => p.length >= 3 && Math.abs(G.area(p)) > 1);
@@ -2936,15 +3094,20 @@ function buildScene() {
     const decks = [], rebars = [], slabs = [], courts = [];
     pieces.forEach(pc => { const d = flat(pc.poly, pc.holes, pc.top - pc.th - 0.012, deckMat); d.castShadow = true; d.visible = false; scene.add(d); decks.push(d);
       const r = flat(pc.poly, pc.holes, pc.top - 0.06, rebarMat); r.visible = false; scene.add(r); rebars.push(r);
+      const rb = flat(pc.poly, pc.holes, pc.top - pc.th + 0.045, rebarMat); rb.visible = false; scene.add(rb); rebars.push(rb);   // 下層筋
       let eg = null;
       BD.forEach((bd, bi) => { const s = bi === 0 ? extr(pc.poly, pc.holes, pc.top - pc.th, pc.th, bd.mat) : (() => { const m = new THREE.Mesh(slabs[slabs.length - 1].geometry, bd.mat); m.position.copy(slabs[slabs.length - 1].position); m.castShadow = true; m.receiveShadow = true; return m; })();
         s.visible = false; scene.add(s); slabs.push(s);
         if (pc.court) courts.push({ m: s, mat: bd.mat, tint: std(pc.top < 0.15 ? '#C2A26A' : pc.top < 0.5 ? '#5C9CC6' : '#A8A196', 0.8, 0, { clippingPlanes: bd.planes }) });
         eg = eg || new THREE.EdgesGeometry(s.geometry, 40); s.add(new THREE.LineSegments(eg, bd.edge)); }); });
-    let bForm = null, bfMat = null, bfGhost = null;
+    let bForm = null, bfMat = null, bfGhost = null, bCage = null;
     if (beams && beams.length) {
       bfMat = (opts.beamMat || M.ply).clone(); bfMat.clippingPlanes = [pDeck]; bfMat.clipShadows = true; bfGhost = bfMat.clone(); bfGhost.clippingPlanes = [pDeck]; bfGhost.transparent = true; bfGhost.opacity = 0.3; bfGhost.depthWrite = false;
-      bForm = inst(unitBox, bfMat, beams.length); BD.forEach(bd => { bd.bConc = inst(unitBox, bd.mat, beams.length); });
+      QCUT.patch(bfMat, QCUT.GRP.BEAM); QCUT.patch(bfGhost, QCUT.GRP.BEAM);
+      bForm = inst(RBM.openTop, bfMat, beams.length); bForm.customDepthMaterial = BEAM_DEPTH;
+      bCage = inst(unitBox, RBM.make('beam', { clip: [pRebar], carve: QCUT.GRP.BEAM }), beams.length); bCage.castShadow = false; bCage.visible = false; scene.add(bCage);
+      beams.forEach((b, i) => { const L = Math.hypot(b.b[0] - b.a[0], b.b[1] - b.a[1]), c = [(b.a[0] + b.b[0]) / 2, (b.a[1] + b.b[1]) / 2]; mq.setFromAxisAngle(UP, yawOf(b.a, b.b));
+        mk.compose(mp.set(c[0] - CX, b.top - 0.8 + 0.04, c[1] - CY), mq, ms.set(Math.max(0.4, L - (opts.colW || 1.0)), 0.71, 0.42)); bCage.setMatrixAt(i, mk); }); BD.forEach(bd => { bd.bConc = inst(unitBox, bd.mat, beams.length); });
       beams.forEach((b, i) => { const L = Math.hypot(b.b[0] - b.a[0], b.b[1] - b.a[1]); const c = [(b.a[0] + b.b[0]) / 2, (b.a[1] + b.b[1]) / 2]; mq.setFromAxisAngle(UP, yawOf(b.a, b.b));
         mk.compose(mp.set(c[0] - CX, b.top - 0.8 - 0.04, c[1] - CY), mq, ms.set(L, 0.82, 0.62)); bForm.setMatrixAt(i, mk);
         mk.compose(mp.set(c[0] - CX, b.top - 0.8, c[1] - CY), mq, ms.set(L, 0.8, 0.5)); BD.forEach(bd => bd.bConc.setMatrixAt(i, mk)); });
@@ -2972,17 +3135,17 @@ function buildScene() {
         const lg = new THREE.BufferGeometry(); lg.setAttribute('position', new THREE.Float32BufferAttribute(A, 3)); lat = new THREE.LineSegments(lg, M.scafLine); lat.visible = false; lat.frustumCulled = false; scene.add(lat); } }
     const part = { update(d) {
       const s = sched;
-      if (opts.xrHide && XR) { if (shore) shore.visible = false; if (lat) lat.visible = false; decks.forEach(m => m.visible = false); rebars.forEach(m => m.visible = false); slabs.forEach(m => m.visible = false); if (bForm) bForm.visible = false; BD.forEach(bd => { if (bd.bConc) bd.bConc.visible = false; }); return; }
+      if (opts.xrHide && XR) { if (shore) shore.visible = false; if (lat) lat.visible = false; decks.forEach(m => m.visible = false); rebars.forEach(m => m.visible = false); slabs.forEach(m => m.visible = false); if (bForm) bForm.visible = false; if (bCage) bCage.visible = false; BD.forEach(bd => { if (bd.bConc) bd.bConc.visible = false; }); return; }
       if (lat) { const on = d >= s.shore[0] && d < s.deckOff && !(CH[cur] && CH[cur].noShore); lat.visible = on; if (on) lat.geometry.setDrawRange(0, latCum[clamp(Math.ceil(latN * prog(d, s.shore)), 1, latN)]); }
       if (shore) { const on = d >= s.deckOff && d < s.shoreOff; shore.visible = on; if (on) shore.count = nS; }
       const deckOn = d >= s.deck[0] && (opts.keepDeck || d < s.deckOff); setFront(pDeck, prog(d, s.deck)); decks.forEach(m => { m.visible = deckOn; m.material = FG ? deckGhost : deckMat; }); if (bForm) { bForm.visible = deckOn; bForm.material = FG ? bfGhost : bfMat; }
-      const rebOn = d >= s.rebar[0] && d < s.pourS[1]; setFront(pRebar, prog(d, s.rebar)); rebars.forEach(m => m.visible = rebOn);
+      const rebOn = d >= s.rebar[0] && d < s.pourS[1]; setFront(pRebar, prog(d, s.rebar)); rebars.forEach(m => m.visible = rebOn); if (bCage) bCage.visible = rebOn;
       const cOn = d >= s.pourS[0]; const cu = prog(d, [s.pour[1], s.pour[1] + 7]);
       BD.forEach(bd => { setPour(bd, prog(d, s.pourS)); if (bd.bConc) bd.bConc.visible = cOn; if (cOn) { bd.mat.color.copy(WET).lerp(CURED, cu); bd.mat.roughness = lerp(0.35, 0.86, cu); } });
       slabs.forEach(m => m.visible = cOn && !SLABHIDE.has(s.L + s.z));
       courts.forEach(c => { c.m.material = XR ? c.tint : c.mat; });
       if (opts.xrGlass) { const g = XR; BD.forEach(bd => { const sm = bd.mat; if (sm.transparent !== g) { sm.transparent = g; sm.depthWrite = !g; sm.needsUpdate = true; } sm.opacity = g ? 0.12 : 1; }); slabs.forEach(m => { m.castShadow = !g; });
-        if (g) { if (bForm) bForm.visible = false; BD.forEach(bd => { if (bd.bConc) bd.bConc.visible = false; }); decks.forEach(m => m.visible = false); }
+        if (g) { if (bForm) bForm.visible = false; if (bCage) bCage.visible = false; BD.forEach(bd => { if (bd.bConc) bd.bConc.visible = false; }); decks.forEach(m => m.visible = false); }
         (opts.ramps || []).forEach(r => { r.visible = cOn; r.material.color.set(g ? '#3E8EC4' : '#BCBEB8'); }); }
     }, active(d) { return d >= sched.pourS[0] && d <= sched.pourS[1]; },
     // where this pump's end hose is: on its band's pour face, swept slowly across the band (hose moved by hand along the face)
@@ -3035,12 +3198,13 @@ function buildScene() {
 
   /* ---------- structure per sub-zone ---------- */
   const VERT = {}, SLAB = {};
+  const HAS1F = new Set(G.cols1F.map(c => c.p[0].toFixed(1) + ',' + c.p[1].toFixed(1)));
   const rampMesh = (R) => { const L = R.t1 - R.t0, rise = R.z1 - R.z0, len = Math.hypot(L, rise), w = R.o1 - R.o0; const m = new THREE.Mesh(cBox, null); m.scale.set(len, 0.25, w);
     const c = G.W((R.t0 + R.t1) / 2, (R.o0 + R.o1) / 2); m.position.set(c[0] - CX, (R.z0 + R.z1) / 2 - 0.12, c[1] - CY);
     const yaw = yawOf(G.W(R.t0, 0), G.W(R.t1, 0)); m.rotation.set(0, yaw, 0, 'YXZ'); m.rotateZ(Math.atan2(rise, L)); m.castShadow = true; m.receiveShadow = true; return m; };
   for (const z of ZK) {
     const dir = pourDir(z), s1 = SS['1' + z], s2 = SS['2' + z];
-    const cols = sortBy(G.colsB1.filter(c => c.z === z).map(c => { const th = c.top < 0.5 ? 0.5 : 0.25; return { X: c.p[0], Y: c.p[1], x: c.p[0] - CX, z: c.p[1] - CY, sx: c.s, sz: c.s, h: c.top - th - (-3.2), core: !!c.src }; }), dir);
+    const cols = sortBy(G.colsB1.filter(c => c.z === z).map(c => { const th = c.top < 0.5 ? 0.5 : 0.25; return { X: c.p[0], Y: c.p[1], x: c.p[0] - CX, z: c.p[1] - CY, sx: c.s, sz: c.s, h: c.top - th - (-3.2), core: !!c.src, th, dl: !c.src && HAS1F.has(c.p[0].toFixed(1) + ',' + c.p[1].toFixed(1)), cont: SHORTC(c) }; }), dir);
     const walls = sortBy(G.walls.filter(w => w.z === z).map(w => { const mid = [(w.a[0] + w.b[0]) / 2, (w.a[1] + w.b[1]) / 2]; const L = Math.hypot(w.b[0] - w.a[0], w.b[1] - w.a[1]);
       const c = [mid[0] - w.n[0] * 0.175, mid[1] - w.n[1] * 0.175]; return { X: c[0], Y: c[1], x: c[0] - CX, z: c[1] - CY, sx: L + 0.06, sz: 0.35, h: w.top - 0.25 + 3.2, yaw: yawOf(w.a, w.b), out: w.n }; }), dir);
     const b1 = BANDS['1' + z], b2 = BANDS['2' + z];
@@ -3049,18 +3213,18 @@ function buildScene() {
     const wcols = G.colW.filter(c => c.z === z).map(c => ({ X: c.p[0], Y: c.p[1], x: c.p[0] - CX, z: c.p[1] - CY, sx: c.s, sz: c.s, h: c.top - thAt(c.top) + 3.2, yaw: c.yaw }));
     const wallBox = (w, h) => { const L = Math.hypot(w.b[0] - w.a[0], w.b[1] - w.a[1]); const c = [(w.a[0] + w.b[0]) / 2, (w.a[1] + w.b[1]) / 2]; return { X: c[0], Y: c[1], x: c[0] - CX, z: c[1] - CY, sx: L + 0.02, sz: w.th, h, yaw: yawOf(w.a, w.b) }; };
     const inner = G.wallsIn.filter(w => w.z === z).map(w => wallBox(w, w.top - thAt(w.top) + 3.2));
-    VERT[z] = { cols: verticals(cols, -3.2, s1, { core: z === 'B1', coreW: z === 'B1' ? SRC : null, bands: b1 }), walls: verticals([...walls, ...wcols, ...inner], -3.2, s1, { wall: true, bands: b1 }), wallItems: walls };
-    const c1f = sortBy(G.cols1F.filter(c => c.z === z).map(c => { const base = G.LV1[c.b], top = G.LV2[c.b]; return { X: c.p[0], Y: c.p[1], x: c.p[0] - CX, z: c.p[1] - CY, sx: 0.9, sz: 0.9, h: top - 0.15 - base, base }; }), dir);
+    VERT[z] = { cols: verticals(cols, -3.2, s1, { core: z === 'B1', coreW: z === 'B1' ? SRC : null, bands: b1, low: [1.1, 1.85], hideAt: SS['2' + z].col[0] + 3 }), walls: verticals([...walls, ...wcols, ...inner], -3.2, s1, { wall: true, bands: b1 }), wallItems: walls };
+    const c1f = sortBy(G.cols1F.filter(c => c.z === z).map(c => { const base = G.LV1[c.b], top = G.LV2[c.b]; return { X: c.p[0], Y: c.p[1], x: c.p[0] - CX, z: c.p[1] - CY, sx: 0.9, sz: 0.9, h: top - 0.15 - base, base, th: 0.15, dl: true }; }), dir);
     const byBase = {}; c1f.forEach(c => { (byBase[c.base] = byBase[c.base] || []).push(c); });
     const w1f = G.walls1F.filter(w => w.z === z).map(w => Object.assign(wallBox(w, G.LV2[w.bd] - 0.15 - G.LV1[w.bd]), { base: G.LV1[w.bd] }));
     const byBaseW = {}; w1f.forEach(c => { (byBaseW[c.base] = byBaseW[c.base] || []).push(c); });
-    VERT[z].up = [...Object.entries(byBase).map(([b, arr]) => verticals(arr, +b, s2, { xrHide: z[0] === 'B', bands: b2 })),
+    VERT[z].up = [...Object.entries(byBase).map(([b, arr]) => verticals(arr, +b, s2, { xrHide: z[0] === 'B', bands: b2, low: [1.0, 1.75] })),
       ...Object.entries(byBaseW).map(([b, arr]) => verticals(arr, +b, s2, { xrHide: z[0] === 'B', bands: b2, wall: true }))];
     let ramps = [];
     if (z === 'B2') { ramps = [rampMesh(G.RAMP_A), rampMesh(G.RAMP_B)]; const rm = std('#BCBEB8', 0.8, 0); ramps.forEach(r => { r.material = rm; r.visible = false; scene.add(r); }); }
     SLAB[z] = { s1: slabSet(G.s1.filter(p => p.z === z), G.beams1.filter(b => b.z === z), s1, dir, { xrGlass: z === 'B2', ramps, bands: b1 }) };
     const pcs2 = G.s2.filter(p => p.z === z && p.b !== 'C');
-    if (pcs2.length) SLAB[z].s2 = slabSet(pcs2, G.beams2.filter(b => b.z === z), s2, dir, { floorAt: (p) => G.lv1At(p), xrHide: z[0] === 'B', bands: b2 });
+    if (pcs2.length) SLAB[z].s2 = slabSet(pcs2, G.beams2.filter(b => b.z === z), s2, dir, { floorAt: (p) => G.lv1At(p), xrHide: z[0] === 'B', bands: b2, colW: 0.9 });
   }
   // C棟 steel
   // C棟 (S12-1/2): the 16 SRC box columns were set on anchor bolts at B1FL and stand 1 m above the 1FL slab (+250);
@@ -3076,10 +3240,10 @@ function buildScene() {
     const slab = slabSet([pc], null, { shore: [0, 0], deck: ST.deck, rebar: ST.rebar, pour: ST.pour, pourS: ST.pour, deckOff: 1e9, shoreOff: 0 }, dir, { noShore: true, deckMat: M.deckSteel, keepDeck: true, bands: BANDS.C });
     const drop = (q) => (1 - sstep(clamp(q * 1.25, 0, 1))) * 9;
     return { update(d) {
-      const pc_ = prog(d, ST.col), x = nC * pc_, k = Math.floor(x); cm.visible = d >= ST.col[0]; cm.count = Math.min(nC, k + 1);
+      const pc_ = prog(d, ST.col), x = nC * pc_, k = Math.floor(x); cm.visible = d >= ST.col[0]; cm.count = Math.min(nC, pc_ >= 1 ? nC : k);
       for (let i = 0; i < nC; i++) { const y = i < k || pc_ >= 1 ? 0 : i === k ? drop(x - k) : 30; mk.compose(mp.copy(CT[i]).setY(SPLICE_C + y), mq.identity(), ms.set(0.6, h, 0.6)); cm.setMatrixAt(i, mk); } cm.instanceMatrix.needsUpdate = true;
-      const pb = prog(d, ST.beam), xb = nBm * pb, kb = Math.floor(xb); bmM.visible = d >= ST.beam[0]; bmM.count = Math.min(nBm, kb + 1);
-      for (let i = 0; i < nBm; i++) { const t = BT[i]; const y = i < kb || pb >= 1 ? 0 : i === kb ? drop(xb - kb) : 30; mq.setFromAxisAngle(UP, t.yaw); mk.compose(mp.copy(t.c).setY(t.c.y + y), mq, ms.set(t.L, 0.7, 0.35)); bmM.setMatrixAt(i, mk); } bmM.instanceMatrix.needsUpdate = true;
+      const pb = prog(d, ST.beam), xb = nBm * pb, kb = Math.floor(xb); bmM.visible = d >= ST.beam[0]; bmM.count = Math.min(nBm, pb >= 1 ? nBm : kb);
+      for (let i = 0; i < nBm; i++) { const t = BT[i]; const y = i < kb || pb >= 1 ? 0 : i === kb ? drop(xb - kb) : 30; mq.setFromAxisAngle(UP, t.yaw); mk.compose(mp.copy(t.c).setY(t.c.y + y), mq, ms.set(Math.max(1, t.L - 0.6), 0.7, 0.35)); bmM.setMatrixAt(i, mk); } bmM.instanceMatrix.needsUpdate = true;
     }, hook(d) { if (d >= ST.col[0] && d < ST.col[1]) { const x = nC * prog(d, ST.col); const k = Math.min(nC - 1, Math.floor(x)); return { p: CT[k].clone().setY(SPLICE_C + h + drop(x - k)), load: 'col' }; }
       if (d >= ST.beam[0] && d < ST.beam[1]) { const x = nBm * prog(d, ST.beam); const k = Math.min(nBm - 1, Math.floor(x)); const t = BT[k]; return { p: t.c.clone().setY(t.c.y + 0.7 + drop(x - k)), load: 'beam', yaw: t.yaw, L: t.L }; } return null; },
       slab };
@@ -3108,9 +3272,18 @@ function buildScene() {
   }
 
   /* ---------- starter bars, wells ---------- */
-  for (const z of ZK) { const cs = G.colsB1.filter(c => c.z === z); const sb = inst(unitBox, M.rebar, cs.length * 4); let i = 0;
-    cs.forEach(c => [[-1, -1], [1, -1], [1, 1], [-1, 1]].forEach(o => { mk.compose(mp.set(c.p[0] - CX + o[0] * 0.33, -3.2, c.p[1] - CY + o[1] * 0.33), mq.identity(), ms.set(0.07, 1.1, 0.07)); sb.setMatrixAt(i++, mk); }));
-    sb.castShadow = false; scene.add(sb); PARTS.push({ update(d) { sb.visible = d < SS['1' + z].col[0] + 0.3; } }); }
+  const dMatC = RBM.make('col', { dowel: true, carve: QCUT.GRP.CAGE, low: [1.1, 1.85] }), dMatW = RBM.make('wall', { dowel: true, carve: QCUT.GRP.CAGE });
+  const dMatCF = {};   // 短柱全長主筋（依柱頂高分組）
+  for (const z of ZK) { const all = G.colsB1.filter(c => c.z === z), cs = all.filter(c => !SHORTC(c)), cf = all.filter(c => SHORTC(c)); const sb = inst(unitBox, dMatC, Math.max(1, cs.length)); sb.castShadow = false; sb.count = cs.length;
+    cs.forEach((c, i) => { mk.compose(mp.set(c.p[0] - CX, -3.2, c.p[1] - CY), mq.identity(), ms.set(c.s + 0.05, 1.86, c.s + 0.05)); sb.setMatrixAt(i, mk); });
+    const sbf = []; const byH = {}; cf.forEach(c => { const H = +(c.top + 3.2 - 0.05).toFixed(2); (byH[H] = byH[H] || []).push(c); });
+    Object.entries(byH).forEach(([H, arr]) => { const m = dMatCF[H] || (dMatCF[H] = RBM.make('col', { dowel: true, carve: QCUT.GRP.CAGE, low: [+H, +H] })); const s = inst(unitBox, m, arr.length); s.castShadow = false;
+      arr.forEach((c, i) => { mk.compose(mp.set(c.p[0] - CX, -3.2, c.p[1] - CY), mq.identity(), ms.set(c.s + 0.05, +H + 0.01, c.s + 0.05)); s.setMatrixAt(i, mk); }); scene.add(s); sbf.push(s); });
+    const wl = [...G.walls.filter(w => w.z === z).map(w => { const mid = [(w.a[0] + w.b[0]) / 2, (w.a[1] + w.b[1]) / 2]; return { c: [mid[0] - w.n[0] * 0.175, mid[1] - w.n[1] * 0.175], L: Math.hypot(w.b[0] - w.a[0], w.b[1] - w.a[1]) + 0.06, th: 0.35, yaw: yawOf(w.a, w.b) }; }),
+      ...G.wallsIn.filter(w => w.z === z).map(w => ({ c: [(w.a[0] + w.b[0]) / 2, (w.a[1] + w.b[1]) / 2], L: Math.hypot(w.b[0] - w.a[0], w.b[1] - w.a[1]) + 0.02, th: w.th, yaw: yawOf(w.a, w.b) }))];
+    const sw = inst(unitBox, dMatW, wl.length); sw.castShadow = false;
+    wl.forEach((w, i) => { mq.setFromAxisAngle(UP, w.yaw); mk.compose(mp.set(w.c[0] - CX, -3.2, w.c[1] - CY), mq, ms.set(w.L, 0.8, w.th + 0.05)); sw.setMatrixAt(i, mk); });
+    scene.add(sb); scene.add(sw); PARTS.push({ update(d) { sb.visible = sw.visible = d < SS['1' + z].col[0] + 0.3; sbf.forEach(s => { s.visible = sb.visible; }); } }); }
   const wells = G.WELLS.map(w => { const g = new THREE.Group(); const p = cyl(0.22, 1.4, M.well); p.position.y = 0.7; g.add(p); const b = box(0.7, 0.5, 0.7, M.well, 0.6, 0.25, 0); g.add(b); g.position.copy(V(w[0], w[1], -3.2)); scene.add(g); return { g, p, b }; });
 
   /* ---------- ghost (final structure) ---------- */
@@ -3950,6 +4123,136 @@ function buildScene() {
     TRACK.hookCW = () => { const c = MC.find(m => m.key === 'CW'); return c ? c.hook.position : null; };
     TRACK.loadCW = () => { const c = MC.find(m => m.key === 'CW'); if (!c) return null; const L = c.loads.beam.visible ? c.loads.beam : c.loads.col.visible ? c.loads.col : null; return L ? L.position : c.hook.position; };
 
+    /* ---------- 品管網頁 3D 模型移植（分項工程品管事項 v4）----------
+       沿用品管網頁的幾何產生器（Geo：方塊、圓柱筋、箍筋、折線）、配色（MC，補強筋藍色）與逐件長出／落下的動畫；
+       各近看改放在本案實際構件位置（像規劃組第 17 章車位一樣原地近看），並把該範圍的示意構件挖空（QCUT）。
+       局部座標：x = +X、y = 向上、z = +Y（以 V(X0, Y0, Z0) 為原點） */
+    const QCM = (() => {
+      class Geo {
+        constructor() { this.p = []; this.n = []; this.e = []; this.min = [1e9, 1e9, 1e9]; this.max = [-1e9, -1e9, -1e9]; }
+        _v(x, y, z, nx, ny, nz) { this.p.push(x, y, z); this.n.push(nx, ny, nz);
+          if (x < this.min[0]) this.min[0] = x; if (y < this.min[1]) this.min[1] = y; if (z < this.min[2]) this.min[2] = z;
+          if (x > this.max[0]) this.max[0] = x; if (y > this.max[1]) this.max[1] = y; if (z > this.max[2]) this.max[2] = z; }
+        _quad(a, b, c, d, n) { for (const v of [a, b, c, a, c, d]) this._v(v[0], v[1], v[2], n[0], n[1], n[2]); }
+        bx(x0, y0, z0, x1, y1, z1, edges = true) {
+          const A = [x0, y0, z0], B = [x1, y0, z0], C = [x1, y1, z0], D = [x0, y1, z0], E = [x0, y0, z1], F = [x1, y0, z1], G = [x1, y1, z1], H = [x0, y1, z1];
+          this._quad(E, F, G, H, [0, 0, 1]); this._quad(B, A, D, C, [0, 0, -1]); this._quad(F, B, C, G, [1, 0, 0]); this._quad(A, E, H, D, [-1, 0, 0]); this._quad(H, G, C, D, [0, 1, 0]); this._quad(A, B, F, E, [0, -1, 0]);
+          if (edges) for (const [p, q] of [[A, B], [B, C], [C, D], [D, A], [E, F], [F, G], [G, H], [H, E], [A, E], [B, F], [C, G], [D, H]]) this.e.push(...p, ...q);
+          return this; }
+        bc(cx, cy, cz, w, h, d, edges = true) { return this.bx(cx - w / 2, cy - h / 2, cz - d / 2, cx + w / 2, cy + h / 2, cz + d / 2, edges); }
+        cy(a, b, r, seg = 6, caps = false) {
+          const ax = b[0] - a[0], ay = b[1] - a[1], az = b[2] - a[2], len = Math.hypot(ax, ay, az) || 1, dx = ax / len, dy = ay / len, dz = az / len;
+          let ux, uy, uz; if (Math.abs(dy) < 0.9) { ux = dz; uy = 0; uz = -dx; } else { ux = 0; uy = -dz; uz = dy; }
+          let l = Math.hypot(ux, uy, uz); ux /= l; uy /= l; uz /= l;
+          const vx = dy * uz - dz * uy, vy = dz * ux - dx * uz, vz = dx * uy - dy * ux, ring = [];
+          for (let i = 0; i < seg; i++) { const t = i / seg * Math.PI * 2, c = Math.cos(t), s = Math.sin(t); ring.push([ux * c + vx * s, uy * c + vy * s, uz * c + vz * s]); }
+          for (let i = 0; i < seg; i++) { const n0 = ring[i], n1 = ring[(i + 1) % seg];
+            const p0 = [a[0] + n0[0] * r, a[1] + n0[1] * r, a[2] + n0[2] * r], p1 = [a[0] + n1[0] * r, a[1] + n1[1] * r, a[2] + n1[2] * r];
+            const q0 = [b[0] + n0[0] * r, b[1] + n0[1] * r, b[2] + n0[2] * r], q1 = [b[0] + n1[0] * r, b[1] + n1[1] * r, b[2] + n1[2] * r];
+            for (const [v, n] of [[p0, n0], [p1, n1], [q1, n1], [p0, n0], [q1, n1], [q0, n0]]) this._v(v[0], v[1], v[2], n[0], n[1], n[2]);
+            if (caps) { this._v(...a, -dx, -dy, -dz); this._v(...p1, -dx, -dy, -dz); this._v(...p0, -dx, -dy, -dz); this._v(...b, dx, dy, dz); this._v(...q0, dx, dy, dz); this._v(...q1, dx, dy, dz); } }
+          return this; }
+        pl(pts, r, seg = 6) { for (let i = 0; i < pts.length - 1; i++) this.cy(pts[i], pts[i + 1], r, seg); return this; }
+        hoop(cx, cy, cz, w, d, r, axis = 'y') { let P;
+          if (axis === 'y') P = [[cx - w / 2, cy, cz - d / 2], [cx + w / 2, cy, cz - d / 2], [cx + w / 2, cy, cz + d / 2], [cx - w / 2, cy, cz + d / 2]];
+          else if (axis === 'x') P = [[cx, cy - w / 2, cz - d / 2], [cx, cy + w / 2, cz - d / 2], [cx, cy + w / 2, cz + d / 2], [cx, cy - w / 2, cz + d / 2]];
+          else P = [[cx - w / 2, cy - d / 2, cz], [cx + w / 2, cy - d / 2, cz], [cx + w / 2, cy + d / 2, cz], [cx - w / 2, cy + d / 2, cz]];
+          return this.pl([...P, P[0]], r, 4); }
+        ln(a, b) { this.e.push(...a, ...b); return this; }
+      }
+      const MC = { conc: [0.74, 0.76, 0.74], conc0: [0.66, 0.68, 0.67], rebar: [0.64, 0.36, 0.2], form: [0.86, 0.69, 0.44], steel: [0.46, 0.53, 0.58], pipe: [0.93, 0.46, 0.15], stop: [0.93, 0.77, 0.2],
+        blanket: [0.2, 0.23, 0.25], red: [0.86, 0.24, 0.24], scaf: [0.6, 0.66, 0.69], plank: [0.42, 0.48, 0.52], grout: [0.52, 0.55, 0.53], primer: [0.64, 0.25, 0.16], deck: [0.68, 0.73, 0.76],
+        yellow: [0.97, 0.78, 0.12], water: [0.35, 0.6, 0.8], dark: [0.18, 0.2, 0.22], joint: [0.96, 0.56, 0.1], tie: [0.72, 0.42, 0.24], spacer: [0.8, 0.82, 0.8] };
+      const RB = [0.1, 0.58, 0.95];   // 補強筋（品管網頁圖例：藍）
+      const R = (a, b, s) => { const o = []; for (let v = a; v <= b + 1e-6; v += s) o.push(+v.toFixed(4)); return o; };
+      const lin = (a, b, maxStep) => { const n = Math.max(1, Math.ceil((b - a) / maxStep - 1e-6)); return Array.from({ length: n + 1 }, (_, i) => a + (b - a) * i / n); };
+      const EDGE = new THREE.Color().setRGB(0.1, 0.12, 0.13), easeO = (x) => 1 - Math.pow(1 - x, 3);
+      // part: o = { color, op, edge, emi, delay, dur, anim: 'grow' | 'drop' | 'fade' | 'none', dropH, shadow }
+      const part = (k, geo, o = {}) => {
+        const grp = new THREE.Group(), op = o.op === undefined ? 1 : o.op, mats = [];
+        if (geo.p.length) { const bg = new THREE.BufferGeometry(); bg.setAttribute('position', new THREE.Float32BufferAttribute(geo.p, 3)); bg.setAttribute('normal', new THREE.Float32BufferAttribute(geo.n, 3));
+          const m = new THREE.MeshLambertMaterial({ color: new THREE.Color().setRGB(...(o.color || MC.conc)), transparent: op < 1, opacity: op, depthWrite: op >= 1, side: op < 1 ? THREE.DoubleSide : THREE.FrontSide });
+          if (o.emi) m.emissive = new THREE.Color().setRGB(...o.emi);
+          const mesh = new THREE.Mesh(bg, m); mesh.castShadow = !!o.shadow; mesh.receiveShadow = op >= 1; if (op < 1) mesh.renderOrder = 3; grp.add(mesh); mats.push(m); }
+        const ed = o.edge === undefined ? 0.35 : o.edge;
+        if (geo.e.length && ed > 0) { const eg = new THREE.BufferGeometry(); eg.setAttribute('position', new THREE.Float32BufferAttribute(geo.e, 3));
+          const lm = new THREE.LineBasicMaterial({ color: EDGE, transparent: true, opacity: Math.min(1, ed) }); grp.add(new THREE.LineSegments(eg, lm)); mats.push(lm); }
+        grp.userData.qa = { base: geo.min[1] === 1e9 ? 0 : geo.min[1], delay: o.delay || 0, dur: o.dur || 0.7, anim: o.anim || 'grow', dropH: o.dropH === undefined ? 1.2 : o.dropH, mats, ops: mats.map(m => m.opacity) };
+        k.add(grp); return grp; };
+      const animate = (k, t) => k.children.forEach(c => { const a = c.userData.qa; if (!a) return; const e = easeO(clamp((t - a.delay) / a.dur, 0, 1));
+        if (a.anim === 'grow') { const s = Math.max(0.002, e); c.scale.y = s; c.position.y = a.base * (1 - s); }
+        else if (a.anim === 'drop') c.position.y = (1 - e) * a.dropH;
+        else if (a.anim === 'fade') a.mats.forEach((m, i) => { if (!m.transparent) { m.transparent = true; m.needsUpdate = true; } m.opacity = a.ops[i] * e; });
+        c.visible = a.anim === 'none' || e > 0.002; });
+      // a close-up: build in a local frame, replay the build-up whenever the close-up opens; carve = boxes of schematic members to hide
+      const kit = (g, X0, Y0, Z0, build, carve) => { const k = new THREE.Group(); k.position.copy(V(X0, Y0, Z0)); g.add(k); build(k);
+        let t0 = 0, done = false; g.userData.carve = carve || null;   // wall-clock timing: the build-up takes the same ~3 s on slow devices
+        g.userData.reset = () => { t0 = performance.now(); done = false; animate(k, RM ? 99 : 0); };
+        g.userData.tick = () => { if (done) return; const t = (performance.now() - t0) / 1000; animate(k, RM ? 99 : t); if (t > 6 || RM) done = true; };
+        return k; };
+      // workers (same blocky figure as the QC page's crew)
+      const person = (g, x, z, y0) => { g.bx(x - 0.18, y0, z - 0.12, x + 0.18, y0 + 0.85, z + 0.12).bx(x - 0.2, y0 + 0.85, z - 0.14, x + 0.2, y0 + 1.45, z + 0.14).cy([x, y0 + 1.45, z], [x, y0 + 1.7, z], 0.11, 10, true); return g; };
+      // 牆（移植自品管網頁 buildRC 的牆筋／模板函式）：w = { axis: 'x'|'z', c, a, b, t, cov, ops: [{ a0, a1, y0, y1 }], endA/endB: 'col'|'cut'|'end' }
+      const W = (() => {
+        const P = (w, s, y, o) => (w.axis === 'x' ? [s, y, w.c + o] : [w.c + o, y, s]);
+        const WB = (g, w, s0, s1, y0, y1, o0, o1, e = true) => { const sa = Math.min(s0, s1), sb = Math.max(s0, s1), oa = Math.min(o0, o1), ob = Math.max(o0, o1);
+          return w.axis === 'x' ? g.bx(sa, y0, w.c + oa, sb, y1, w.c + ob, e) : g.bx(w.c + oa, y0, sa, w.c + ob, y1, sb, e); };
+        const segs = (a, b, blocks) => { blocks = blocks.slice().sort((p, q) => p[0] - q[0]); const out = []; let x = a; for (const [b0, b1] of blocks) { if (b0 > x) out.push([x, Math.min(b0, b)]); x = Math.max(x, b1); } if (x < b) out.push([x, b]); return out.filter(([p, q]) => q - p > 0.02); };
+        const lay = (w) => w.t / 2 - (w.cov || 0.045);
+        const inOpen = (w, s, y) => w.ops.some((q) => s > q.a0 - 0.03 && s < q.a1 + 0.03 && y > q.y0 - 0.05 && y < q.y1 + 0.05);
+        // 雙層 @20：垂直筋至 vTop（高出澆置面留搭接；外牆頂端 180° 防穿刺彎頭與牆面平行），水平筋至澆置面，端部依接續方式伸入柱或相接牆
+        const mesh = (g, walls, y0, yH, vTop, hooks = false, r = 0.013) => { for (const w of walls) { const oo = lay(w);
+          for (const o of [-oo, oo]) {
+            for (const s of R(w.a + 0.1, w.b - 0.1, 0.2)) { const bl = w.ops.filter(q => s > q.a0 - 0.03 && s < q.a1 + 0.03).map(q => [q.y0 - 0.05, q.y1 + 0.05]);
+              for (const [p, q] of segs(y0, vTop, bl)) { g.cy(P(w, s, p, o), P(w, s, q, o), r, 4);
+                if (hooks && q >= vTop - 1e-6) g.pl([P(w, s, q, o), P(w, s + 0.03, q + 0.06, o), P(w, s + 0.07, q + 0.06, o), P(w, s + 0.1, q, o), P(w, s + 0.1, q - 0.08, o)], 0.011, 4); } }
+            const sA = w.a - (w.endA === 'col' ? 0.3 : w.endA === 'cut' ? 0 : 0.02), sB = w.b + (w.endB === 'col' ? 0.3 : w.endB === 'cut' ? 0 : 0.02), oh = Math.sign(o) * (Math.abs(o) - 2 * r);
+            for (const yy of R(y0 + 0.15, yH - 0.05, 0.2)) { const bl = w.ops.filter(q => yy > q.y0 - 0.05 && yy < q.y1 + 0.05).map(q => [q.a0 - 0.05, q.a1 + 0.05]);
+              for (const [p, q] of segs(sA, sB, bl)) g.cy(P(w, p, yy, oh), P(w, q, yy, oh), r, 4); } } } };
+        const dowels = (g, walls, h) => { for (const w of walls) { const oo = lay(w); for (const o of [-oo, oo]) for (const s of R(w.a + 0.1, w.b - 0.1, 0.2)) {
+          if (w.ops.some(q => q.y0 <= 0 && s > q.a0 - 0.03 && s < q.a1 + 0.03)) continue; g.cy(P(w, s + 0.035, 0, o), P(w, s + 0.035, h, o), 0.013, 4); } } };
+        // 開口補強：所列各邊順向筋 2 支（兩層、延伸 50 cm）；所列各角斜向筋 2 支（單排、牆中心面，與角隅裂縫方向垂直）
+        const trims = (g, w, q, sides, corners, DL = 0.32) => { const oo = lay(w) - 0.026;
+          for (const o of [-oo, oo]) for (const d of [0.08, 0.16]) {
+            if (sides.includes('L')) g.cy(P(w, q.a0 - d, Math.max(0, q.y0 - 0.5), o), P(w, q.a0 - d, q.y1 + 0.5, o), 0.017, 4);
+            if (sides.includes('R')) g.cy(P(w, q.a1 + d, Math.max(0, q.y0 - 0.5), o), P(w, q.a1 + d, q.y1 + 0.5, o), 0.017, 4);
+            if (sides.includes('B')) g.cy(P(w, q.a0 - 0.5, q.y0 - d, o), P(w, q.a1 + 0.5, q.y0 - d, o), 0.017, 4);
+            if (sides.includes('T')) g.cy(P(w, q.a0 - 0.5, q.y1 + d, o), P(w, q.a1 + 0.5, q.y1 + d, o), 0.017, 4); }
+          const all = { BL: [q.a0, q.y0, -1, -1], BR: [q.a1, q.y0, 1, -1], TL: [q.a0, q.y1, -1, 1], TR: [q.a1, q.y1, 1, 1] };
+          for (const key of corners) { const [cs, cy, ss, sy] = all[key], ms = cs + ss * 0.12, my = cy + sy * 0.12, ds = 1 / Math.SQRT2, dy = -ss * sy / Math.SQRT2;
+            for (const kk of [0, 0.07]) g.cy(P(w, ms + ss * kk * ds - ds * DL, my + sy * kk * ds - dy * DL, 0), P(w, ms + ss * kk * ds + ds * DL, my + sy * kk * ds + dy * DL, 0), 0.014, 4); } };
+        // 寬止筋：U 形筋封住開口兩側與上緣 @20
+        const ubars = (g, w, q) => { const oo = lay(w);
+          for (const yy of R(q.y0 + 0.1, q.y1 - 0.05, 0.2)) for (const [s, sg] of [[q.a0, -1], [q.a1, 1]]) g.pl([P(w, s + sg * 0.2, yy, -oo), P(w, s + sg * 0.035, yy, -oo), P(w, s + sg * 0.035, yy, oo), P(w, s + sg * 0.2, yy, oo)], 0.01, 4);
+          for (const s of R(q.a0 + 0.1, q.a1 - 0.05, 0.2)) g.pl([P(w, s, q.y1 + 0.2, -oo), P(w, s, q.y1 + 0.035, -oo), P(w, s, q.y1 + 0.035, oo), P(w, s, q.y1 + 0.2, oo)], 0.01, 4); };
+        // T 字：直牆水平筋以 30d 彎鉤伸到相接牆遠側筋位再轉 30 cm；交接處 4 支固定鋼筋
+        const tee = (g, st, fl, y0, yH, vTop, end) => { const s0 = end === 'a' ? st.a : st.b, dir = end === 'a' ? -1 : 1, oS = lay(st), oF = lay(fl), far = fl.c + dir * oF;
+          for (const yy of R(y0 + 0.15, yH - 0.05, 0.2)) for (const d of [-oS, oS]) g.pl([P(st, s0 - dir * 0.6, yy + 0.025, d), P(st, far, yy + 0.025, d), P(st, far, yy + 0.025, d + Math.sign(d) * 0.3)], 0.015, 4);
+          for (const a of [-0.6 * oF, 0.6 * oF]) for (const b of [-0.07, 0.07]) g.cy(P(st, fl.c + a, y0, b), P(st, fl.c + a, vTop, b), 0.019, 6); };
+        // 角隅：內外層 L 形水平筋（各伸入兩牆 60 cm）＋角隅 4 支垂直筋；A 為沿 z 的牆、B 為沿 x 的牆
+        const corner = (g, A, ea, B, eb, y0, yH, vTop) => { const oA = lay(A), oB = lay(B), dA = ea === 'a' ? 1 : -1, dB = eb === 'a' ? 1 : -1, sx = -dB, sz = -dA;
+          for (const yy of R(y0 + 0.15, yH - 0.05, 0.2)) for (const k of [1, -1]) { const xl = A.c + k * sx * oA, zl = B.c + k * sz * oB;
+            g.pl([[xl, yy + 0.03, B.c + dA * 0.6], [xl, yy + 0.03, zl], [A.c + dB * 0.6, yy + 0.03, zl]], 0.015, 4); }
+          for (const a of [-0.6 * oA, 0.6 * oA]) for (const b of [-0.6 * oB, 0.6 * oB]) g.cy([A.c + a, y0, B.c + b], [A.c + a, vTop, B.c + b], 0.019, 6); };
+        // 間隔器＋寬止筋：H@5 格（1.0 m）、V@4 格（0.8 m）
+        const spacers = (walls, y0, y1) => { const g = new Geo(), gt = new Geo(); for (const w of walls) { const oo = w.t / 2 - 0.02;
+          for (const s of R(w.a + 0.3, w.b - 0.2, 1.0)) for (const yy of R(y0 + 0.35, y1 - 0.1, 0.8)) { if (inOpen(w, s, yy)) continue;
+            for (const sg of [-1, 1]) g.cy(P(w, s, yy, sg * (oo - 0.02)), P(w, s, yy, sg * (oo + 0.005)), 0.03, 8, true);
+            gt.pl([P(w, s - 0.03, yy + 0.03, -(w.t / 2 - 0.04)), P(w, s, yy, -(w.t / 2 - 0.04)), P(w, s, yy, w.t / 2 - 0.04), P(w, s + 0.03, yy - 0.03, w.t / 2 - 0.04)], 0.008, 4); } } return [g, gt]; };
+        // 單面模（side = ±1 的那一面），門洞兩側到門頂、門頂以上整片
+        const face = (g, w, side, y0, y1, ops) => { const h = w.t / 2, o0 = side > 0 ? h : -h - 0.03, o1 = side > 0 ? h + 0.03 : -h;
+          for (const [s0, s1] of segs(w.a, w.b, ops.map(q => [q.a0, q.a1]))) WB(g, w, s0, s1, y0, y1, o0, o1);
+          for (const q of ops) if (q.y1 < y1) WB(g, w, q.a0, q.a1, q.y1, y1, o0, o1); };
+        const buck = (g, w, q) => { const h = w.t / 2 + 0.03; WB(g, w, q.a0, q.a0 + 0.03, q.y0, q.y1, -h, h); WB(g, w, q.a1 - 0.03, q.a1, q.y0, q.y1, -h, h); WB(g, w, q.a0, q.a1, q.y1 - 0.03, q.y1, -h, h); };   // 開口模板
+        const mark = (g, w, q, side) => { const f = side > 0 ? w.t / 2 - 0.004 : -w.t / 2 + 0.004, m = 0.03, o0 = f - 0.004, o1 = f + 0.004;   // 開口於模板上先標示（紅框＋叉）
+          WB(g, w, q.a0, q.a1, q.y0 + 0.02, q.y0 + 0.02 + m, o0, o1, false); WB(g, w, q.a0, q.a1, q.y1 - m, q.y1, o0, o1, false); WB(g, w, q.a0, q.a0 + m, q.y0, q.y1, o0, o1, false); WB(g, w, q.a1 - m, q.a1, q.y0, q.y1, o0, o1, false);
+          g.cy(P(w, q.a0, q.y0 + 0.05, f), P(w, q.a1, q.y1, f), 0.012, 4).cy(P(w, q.a0, q.y1, f), P(w, q.a1, q.y0 + 0.05, f), 0.012, 4); };
+        const braces = (g, w, side, hTop, reach, at) => { for (const s of (at || R(w.a + 0.6, w.b - 0.4, 1.6))) g.cy(P(w, s, 0.02, side * (w.t / 2 + reach + 0.1)), P(w, s, hTop, side * (w.t / 2 + 0.05)), 0.022, 6); };
+        return { P, WB, segs, lay, mesh, dowels, trims, ubars, tee, corner, spacers, face, buck, mark, braces };
+      })();
+      return { Geo, MC, RB, R, lin, part, animate, kit, person, W };
+    })();
+
     /* ---------- 近看標示（章節或停點的 hl：半透明色塊＋外框、尺寸線、各章專用道具）---------- */
     const HL = (() => {
       const cache = {}; let cur = null, curK = null;
@@ -4152,111 +4455,238 @@ function buildScene() {
             if (major) { const p = G.W(t, R.o1 + 0.4); T.bar(g, [p[0], p[1], zz], [p[0], p[1], zz + 1.0], 0.06, '#E02020'); } }
           const len = Math.hypot(L, R.z1 - R.z0), c = G.W((R.t0 + R.t1) / 2, oc), m = new THREE.Mesh(cBox, bm('#E8B417', 0.45)); m.scale.set(len, 0.05, w - 0.1);
           m.position.set(c[0] - CX, (R.z0 + R.z1) / 2 + 0.025, c[1] - CY); m.rotation.set(0, yawOf(G.W(R.t0, 0), G.W(R.t1, 0)), 0, 'YXZ'); m.rotateZ(Math.atan2(R.z1 - R.z0, L)); m.renderOrder = 4; g.add(m); },
-        // ---- 品管：柱牆檢查 ① 1:1 柱筋示意（第 46 頁照片）：續接交錯（搭接錯開）、箍筋與繫筋彎鉤、機電配管走箍筋內側不破壞柱筋
-        qc1(g) { const X = 22.5, Y = 16.5, z0 = -3.2, z1 = -0.3, bx = 0.44, rust = '#9A4B2B', hoop = '#E8B417';
-          T.box(g, X - 0.62, Y - 0.62, z0, X + 0.62, Y + 0.62, z1 + 0.2, '#7B3FA0', 0.08);
-          const bars = []; [-1, 1].forEach(a => [-1, 1].forEach(b => bars.push([a * bx, b * bx])));
-          [-1 / 3, 1 / 3].forEach(f => { bars.push([f * 2 * bx * 0.75, -bx], [f * 2 * bx * 0.75, bx], [-bx, f * 2 * bx * 0.75], [bx, f * 2 * bx * 0.75]); });
-          const lap = 0.6, zsA = -2.75, zsB = -2.05;
-          bars.forEach(([px, py], i) => { const zs = i % 2 ? zsB : zsA, side = Math.abs(py) > Math.abs(px) - 1e-6 ? [0.05, 0] : [0, 0.05];
-            T.bar(g, [X + px, Y + py, z0], [X + px, Y + py, zs + lap], 0.034, rust); T.bar(g, [X + px + side[0], Y + py + side[1], zs], [X + px + side[0], Y + py + side[1], z1], 0.034, rust); });
-          [zsA, zsB].forEach(zs => T.box(g, X - 0.53, Y - 0.53, zs, X + 0.53, Y + 0.53, zs + lap, '#E8742A', 0.16));        // 搭接區（兩組錯開）
-          const hs = bx + 0.035; let k = 0;
-          for (let z = z0 + 0.06; z < z1; z += 0.15, k++) { RING(g, X, Y, z, hs * 2, hoop);
-            const sx = k % 2 ? 1 : -1, sy = (k >> 1) % 2 ? 1 : -1, c = [X + sx * hs, Y + sy * hs];                    // 135° 彎鉤，角隅輪替
-            T.bar(g, [c[0], c[1], z], [c[0] - sx * 0.1, c[1] - sy * 0.03, z + 0.01], 0.016, hoop); T.bar(g, [c[0], c[1], z], [c[0] - sx * 0.03, c[1] - sy * 0.1, z + 0.01], 0.016, hoop);
-            if (k % 2 === 0) { T.bar(g, [X - hs, Y, z + 0.02], [X + hs, Y, z + 0.02], 0.014, hoop); T.bar(g, [X, Y - hs, z + 0.03], [X, Y + hs, z + 0.03], 0.014, hoop);   // 繫筋：兩端彎鉤勾住主筋
-              [[-1, 0], [1, 0]].forEach(([sx]) => T.bar(g, [X + sx * hs, Y, z + 0.02], [X + sx * (hs - 0.07), Y + 0.06, z + 0.05], 0.014, hoop)); [[0, -1], [0, 1]].forEach(([, sy]) => T.bar(g, [X, Y + sy * hs, z + 0.03], [X + 0.06, Y + sy * (hs - 0.07), z + 0.06], 0.014, hoop)); } }
-          T.bar(g, [X + 0.26, Y + 0.26, z0], [X + 0.26, Y + 0.26, z1 + 0.15], 0.05, '#F2C230');                         // 配管：走箍筋內側，不切主筋
-        },
-        // ---- 品管：柱牆檢查 ② 1:1 牆筋示意（第 46 頁照片）：T 字補強（固定鋼筋 #4，30d／15d）、角隅補強（L 形）、開口補強（順向 #5 雙排、斜角 #4 單排 2 支、寬止筋）＋開口模板
-        qc2(g) { const X = 22.5, Y = 16.5, z0 = -3.2, H = 2.8, rust = '#9A4B2B', blue = '#7D8C99', rf = '#E8742A', dg = '#E02020';
-          // 牆 A：沿 X 的直牆（長 3.2 m），中央 1.0 × 1.0 m 開口；東端接 T 字牆，西端轉角成 L
-          const L = 3.2, xa = X - L / 2, xb = X + L / 2, ox0 = X - 0.5, ox1 = X + 0.5, oz0 = -2.45, oz1 = -1.45;
-          [Y - 0.1, Y + 0.1].forEach(y => {
-            for (let x = xa + 0.1; x <= xb - 0.09; x += 0.2) {
-              if (x > ox0 && x < ox1) { T.bar(g, [x, y, z0], [x, y, oz0 - 0.04], 0.022, rust); T.bar(g, [x, y, oz1 + 0.04], [x, y, z0 + H], 0.022, rust); }
-              else T.bar(g, [x, y, z0], [x, y, z0 + H], 0.022, rust); }
-            for (let z = z0 + 0.1; z <= z0 + H; z += 0.2) { const yy = y + (y < Y ? 0.025 : -0.025);
-              if (z > oz0 && z < oz1) { T.bar(g, [xa, yy, z], [ox0 - 0.04, yy, z], 0.022, blue); T.bar(g, [ox1 + 0.04, yy, z], [xb, yy, z], 0.022, blue); }
-              else T.bar(g, [xa, yy, z], [xb, yy, z], 0.022, blue); } });
-          // 開口補強：順向 #5 雙排（四邊、延伸 60 cm）＋斜角 #4 單排 2 支（四角）＋寬止筋
-          [Y - 0.05, Y + 0.05].forEach(yb => { [oz0 - 0.08, oz1 + 0.08].forEach(z => T.bar(g, [ox0 - 0.6, yb, z], [ox1 + 0.6, yb, z], 0.032, rf)); [ox0 - 0.08, ox1 + 0.08].forEach(x => T.bar(g, [x, yb, oz0 - 0.6], [x, yb, oz1 + 0.6], 0.032, rf)); });
-          [[ox0, oz0, -1, -1], [ox1, oz0, 1, -1], [ox1, oz1, 1, 1], [ox0, oz1, -1, 1]].forEach(([x, zz, sx, sz]) => [-0.03, 0.03].forEach(dd => { const c = [x + sx * 0.18, zz + sz * 0.18], d = [sx * 0.32, -sz * 0.32]; T.bar(g, [c[0] - d[0] + dd, Y, c[1] - d[1] - dd], [c[0] + d[0] + dd, Y, c[1] + d[1] - dd], 0.026, dg); }));
-          const U = (x, z, ax) => { const a0 = [x, Y - 0.12, z], a1 = [x, Y + 0.12, z]; T.bar(g, a0, a1, 0.022, '#F2C230'); const o = ax === 'x' ? [-0.18, 0] : ax === 'xr' ? [0.18, 0] : [0, 0.18]; T.bar(g, a0, [x + o[0], Y - 0.12, z + o[1]], 0.022, '#F2C230'); T.bar(g, a1, [x + o[0], Y + 0.12, z + o[1]], 0.022, '#F2C230'); };   // 寬止筋（U 形，封住開口邊）
-          for (let z = oz0 + 0.1; z < oz1; z += 0.2) { U(ox0 - 0.02, z, 'x'); U(ox1 + 0.02, z, 'xr'); }
-          [[ox0 - 0.02, ox1 + 0.02]].forEach(([xa, xb]) => { for (let x = xa + 0.1; x < xb; x += 0.2) { T.bar(g, [x, Y - 0.12, oz0 - 0.02], [x, Y + 0.12, oz0 - 0.02], 0.022, '#F2C230'); T.bar(g, [x, Y - 0.12, oz1 + 0.02], [x, Y + 0.12, oz1 + 0.02], 0.022, '#F2C230'); } });
-          T.box(g, ox0, Y - 0.22, oz0, ox1, Y + 0.22, oz1, dg, 0.12);                                                                   // 開口模板
-          // T 字：東端接一道往 +Y 的牆；T 字補強（固定鋼筋 #4）由直牆內側彎入
-          const ty0 = Y + 0.15, ty1 = Y + 1.6;
-          [xb - 0.4, xb - 0.2].forEach(x => { for (let y = ty0 + 0.1; y <= ty1; y += 0.25) T.bar(g, [x, y, z0], [x, y, z0 + H], 0.022, rust);
-            for (let z = z0 + 0.1; z <= z0 + H; z += 0.2) T.bar(g, [x, ty0, z], [x, ty1, z], 0.022, blue); });
-          for (let z = z0 + 0.2; z <= z0 + H - 0.1; z += 0.4) [xb - 0.4, xb - 0.2].forEach((x, i) => { const sx = i ? 1 : -1; T.bar(g, [x, ty0 + 0.6, z + 0.02], [x, Y + 0.12, z + 0.02], 0.026, rf); T.bar(g, [x, Y + 0.12, z + 0.02], [x + sx * 0.45, Y + 0.12, z + 0.02], 0.026, rf); });
-          T.box(g, xb - 0.6, Y - 0.15, z0, xb, ty1, z0 + H, '#7B3FA0', 0.06);
-          // 角隅（L）：西端轉角接一道往 −Y 的牆；角隅補強 L 形筋
-          const cy0 = Y - 0.15, cy1 = Y - 1.6;
-          [xa + 0.1, xa + 0.3].forEach(x => { for (let y = cy0 - 0.1; y >= cy1; y -= 0.25) T.bar(g, [x, y, z0], [x, y, z0 + H], 0.022, rust);
-            for (let z = z0 + 0.1; z <= z0 + H; z += 0.2) T.bar(g, [x, cy0, z], [x, cy1, z], 0.022, blue); });
-          for (let z = z0 + 0.2; z <= z0 + H - 0.1; z += 0.4) { T.bar(g, [xa + 0.65, Y - 0.1, z + 0.03], [xa + 0.05, Y - 0.1, z + 0.03], 0.026, rf); T.bar(g, [xa + 0.05, Y - 0.1, z + 0.03], [xa + 0.05, Y - 0.7, z + 0.03], 0.026, rf); }
-          T.box(g, xa, cy1, z0, xa + 0.4, Y + 0.15, z0 + H, '#7B3FA0', 0.06); },
-        qc3(g) { const y = -2.72; for (let x = 7.4; x <= 12.9; x += 1.8) T.box(g, x - 0.2, y, -3.2, x + 0.2, y + 0.1, -2.96, '#7B3FA0', 0.6);   // 清潔口（封模前清除雜物後封緊）
-          T.bar(g, [6.6, y + 0.02, WS.zj], [13.6, y + 0.02, WS.zj], 0.045, '#E8742A');                                                     // 止水帶位置（−80）
-          const mem = B(g, 10.1, -3.12, -2.05, 7.2, 2.3, 0.02, '#1E2022'); mem.material = new THREE.MeshBasicMaterial({ color: 0x1E2022, transparent: true, opacity: 0.4, depthTest: false }); mem.renderOrder = 6; },
-        // ---- 品管：梁版檢查 ① 1:1 示意（第 47 頁照片）：梁柱接頭箍筋（要降到梁底）、大小梁交接處大梁箍筋加密（小梁兩側各 h/2、距小梁面 5 cm）、穿梁套管＋補強筋
-        qb1(g) { const X = 22.5, Y = 16.5, z0 = G.LV1.A + 0.02, D = 0.8, zt = z0 + D, cw = 0.45, bw = 0.22, rust = '#9A4B2B', st = '#E8B417';
-          const bars = []; [-1, 1].forEach(a => [-1, 1].forEach(b => bars.push([a * cw, b * cw]))); [-1 / 3, 1 / 3].forEach(f => bars.push([f * 1.5 * cw, -cw], [f * 1.5 * cw, cw], [-cw, f * 1.5 * cw], [cw, f * 1.5 * cw]));
-          bars.forEach(([px, py]) => T.bar(g, [X + px, Y + py, z0 - 0.02], [X + px, Y + py, zt + 0.9], 0.032, rust));      // 柱主筋（穿過接頭續向上）
-          for (let z = z0 + 0.06; z < zt; z += 0.1) RING(g, X, Y, z, 2 * cw + 0.07, '#7B3FA0');                               // 梁柱接頭箍筋（紫）：要降到梁底
-          for (let z = zt + 0.12; z < zt + 0.9; z += 0.15) RING(g, X, Y, z, 2 * cw + 0.07, st);
-          T.box(g, X - cw - 0.08, Y - cw - 0.08, z0, X + cw + 0.08, Y + cw + 0.08, zt, '#7B3FA0', 0.12);
-          const stir = (P, s, w, zb, ztp, c) => { const a = P(s, -w, zb), b = P(s, w, zb), c2 = P(s, w, ztp), d = P(s, -w, ztp); T.bar(g, a, b, 0.018, c); T.bar(g, b, c2, 0.018, c); T.bar(g, c2, d, 0.018, c); T.bar(g, d, a, 0.018, c); };
-          const beamP = (dx, dy) => { const n = [-dy, dx]; return (s, o, z) => [X + dx * s + n[0] * o, Y + dy * s + n[1] * o, z]; };
-          // 大梁（+X，長 3.6 m）：小梁在距柱面 2.4 m 處交接；小梁兩側各 h/2（距小梁面 5 cm 起）箍筋加密（橘）
-          const PX = beamP(1, 0), Lm = 3.6, sx = cw + 2.4, hb = 0.6, bB = 0.3, z1 = zt - hb;
-          [-1, 1].forEach(sd => [zt - 0.06, z0 + 0.06].forEach(z => T.bar(g, PX(cw - 0.1, sd * (bw - 0.05), z), PX(cw + Lm, sd * (bw - 0.05), z), 0.03, rust)));
-          const dense = (s) => Math.abs(s - sx) > bB / 2 + 0.04 && Math.abs(s - sx) < bB / 2 + 0.05 + hb / 2 + 0.01;
-          for (let s = cw + 0.1; s <= cw + Lm; s += 0.2) if (Math.abs(s - sx) > bB / 2 + hb / 2 + 0.03) stir(PX, s, bw, z0 + 0.03, zt - 0.03, st);
-          [-0.1, 0, 0.1].forEach(o => stir(PX, sx + o, bw + 0.012, z0 + 0.03, zt - 0.03, '#E8742A'));                                      // 小梁寬 B 範圍內大梁箍筋照常配置
-          [-1, 1].forEach(sd => { for (let k = 0; k < 3; k++) { const s = sx + sd * (bB / 2 + 0.05 + k * 0.1); stir(PX, s, bw + 0.012, z0 + 0.03, zt - 0.03, '#E8742A'); } });   // 距小梁面 5 cm 起，h/2 範圍內加密
-          [-1, 1].forEach(sd => { const s0 = sx + sd * (bB / 2), s1 = sx + sd * (bB / 2 + hb / 2); const q0 = PX(Math.min(s0, s1), 0, 0), q1 = PX(Math.max(s0, s1), 0, 0);
-            T.obox(g, [(q0[0] + q1[0]) / 2, (q0[1] + q1[1]) / 2], [1, 0], Math.abs(s1 - s0), 2 * bw + 0.08, z0, zt, '#E8742A', 0.16); });
-          // 小梁（+Y 方向，寬 B、深 h，梁頂齊平）
-          const PY = (s, o, z) => [X + sx + o, Y + s, z];
-          [-1, 1].forEach(sd => [zt - 0.06, z1 + 0.06].forEach(z => T.bar(g, PY(bw, sd * (bB / 2 - 0.05), z), PY(bw + 1.8, sd * (bB / 2 - 0.05), z), 0.026, rust)));
-          for (let s2 = bw + 0.1; s2 <= bw + 1.8; s2 += 0.2) stir(PY, s2, bB / 2, z1 + 0.03, zt - 0.03, st);
-          // 其他三向梁頭（一般箍筋）
-          [[-1, 0], [0, 1], [0, -1]].forEach(([dx, dy]) => { const P = beamP(dx, dy); [-1, 1].forEach(sd => [zt - 0.06, z0 + 0.06].forEach(z => T.bar(g, P(cw - 0.1, sd * (bw - 0.05), z), P(cw + 1.2, sd * (bw - 0.05), z), 0.03, rust)));
-            for (let s = cw + 0.1; s <= cw + 1.2; s += 0.2) stir(P, s, bw, z0 + 0.03, zt - 0.03, st); });
-          // 穿梁套管（大梁，距柱面 1.1 m）＋兩側斜向補強筋
-          const px = X + cw + 1.1, pz = z0 + D / 2, m = new THREE.Mesh(new THREE.CylinderGeometry(0.075, 0.075, 2 * bw + 0.12, 16), lam('#9AA3A9')); m.rotation.x = Math.PI / 2; m.position.copy(V(px, Y, pz)); g.add(m);
-          [-1, 1].forEach(sd => { const yy = Y + sd * (bw - 0.02); T.bar(g, [px - 0.32, yy, pz - 0.3], [px + 0.32, yy, pz + 0.3], 0.024, '#E02020'); T.bar(g, [px - 0.32, yy, pz + 0.3], [px + 0.32, yy, pz - 0.3], 0.024, '#E02020'); });
-          T.box(g, px - 0.4, Y - bw - 0.08, pz - 0.36, px + 0.4, Y + bw + 0.08, pz + 0.36, '#E02020', 0.12);
-          B(g, X + 1.0, Y + 0.5, G.LV1.A + 0.01, 6.6, 0.02, 5.0, '#D8D4C8'); },
-        // ---- 品管：梁版檢查 ② 版開口補強（四邊＋角隅斜筋）
-        qb2(g) { const x0 = 33.15, x1 = 35.8, y0 = 22.5, y1 = 32.5, z = G.LV1.A - 0.05, e = 0.15, ext = 0.6;
-          [[x0 - e, y0 - ext, x0 - e, y1 + ext], [x1 + e, y0 - ext, x1 + e, y1 + ext], [x0 - ext, y0 - e, x1 + ext, y0 - e], [x0 - ext, y1 + e, x1 + ext, y1 + e]].forEach(([ax, ay, bx2, by]) => { T.bar(g, [ax, ay, z], [bx2, by, z], 0.05, '#E8742A'); });
-          [[x0, y0, -1, -1], [x1, y0, 1, -1], [x1, y1, 1, 1], [x0, y1, -1, 1]].forEach(([x, y, sx, sy]) => { const c = [x + sx * 0.3, y + sy * 0.3]; T.bar(g, [c[0] - sx * 0.42, c[1] + sy * 0.42, z + 0.02], [c[0] + sx * 0.42, c[1] - sy * 0.42, z + 0.02], 0.05, '#E02020'); });
-          T.box(g, x0 - 0.35, y0 - 0.35, z - 0.05, x1 + 0.35, y1 + 0.35, z + 0.06, '#7B3FA0', 0.18); },
-        // ---- 品管：梁版檢查 ③ 標高確認（水準儀＋標尺）
-        qb3(g) { const z = G.LV1.A; T.box(g, 18.3, 22.3, z - 0.004, 26.7, 32.7, z + 0.004, '#2F6FB0', 0.3, true);
-          const tp = [21.0, 29.0]; [[0, 0.32], [0.28, -0.16], [-0.28, -0.16]].forEach(([dx, dy]) => T.bar(g, [tp[0] + dx, tp[1] + dy, z + 0.02], [tp[0], tp[1], z + 1.35], 0.03, '#C9A14A'));
-          B(g, tp[0], tp[1], z + 1.45, 0.22, 0.16, 0.14, '#2E3236'); B(g, tp[0] + 0.14, tp[1], z + 1.47, 0.08, 0.06, 0.06, '#1E57D9');
-          const st = [24.6, 27.4]; for (let k = 0; k < 8; k++) B(g, st[0], st[1], z + 0.15 + k * 0.3, 0.06, 0.3, 0.04, k % 2 ? '#F2C230' : '#E02020'); },
-        // ---- 品管：鋼構 ① +250 續接；工廠構件示意：箱型柱掀開蓋板見內隔板＋焊道
-        qs1(g) { const c = HOT.col, z = G.LV1.C; T.box(g, c[0] - 0.42, c[1] - 0.42, SPLICE_C - 0.12, c[0] + 0.42, c[1] + 0.42, SPLICE_C + 0.12, '#E0782A', 0.45);
-          const X = c[0] - 3.4, Y = c[1] + 2.2, Lc = 3.0, yaw = 0.35, P = (a, b) => [X + Math.cos(yaw) * a + Math.sin(yaw) * b, Y - Math.sin(yaw) * a + Math.cos(yaw) * b];
-          [-1.1, 1.1].forEach(a => { const p = P(a, 0); B(g, p[0], p[1], z + 0.06, 0.16, 0.12, 0.9, '#8B6A3E', yaw); });
-          const h0 = z + 0.12; [[0, -0.28, 0.04, 0.6], [0, 0.28, 0.04, 0.6]].forEach(([a, b]) => { const p = P(a, b); B(g, p[0], p[1], h0 + 0.3, Lc, 0.6, 0.04, '#8E3B2E', yaw); });
-          const pb = P(0, 0); B(g, pb[0], pb[1], h0 + 0.02, Lc, 0.04, 0.6, '#8E3B2E', yaw); B(g, pb[0], pb[1], h0 + 0.98, Lc, 0.04, 0.6, '#8E3B2E', yaw);
-          const pd = P(0.1, 0); B(g, pd[0], pd[1], h0 + 0.3, 0.03, 0.52, 0.52, '#E8742A', yaw);
-          [[0.12, -0.26], [0.12, 0.26], [0.08, -0.26], [0.08, 0.26]].forEach(([a, b]) => { const p = P(a, b); B(g, p[0], p[1], h0 + 0.3, 0.025, 0.52, 0.025, '#E02020', yaw); });
-          [h0 + 0.05, h0 + 0.55].forEach(hh => { const p = P(0.1, 0); B(g, p[0], p[1], hh, 0.04, 0.025, 0.52, '#E02020', yaw); }); },
+        // ======== 品管組近看：沿用品管網頁的 3D 模型（構件細部、配色、逐件長出動畫），改放在本案實際構件上原地近看 ========
+        // ---- 柱牆檢查 ①：A1 區 B1F 柱（27, 11），第 11 天柱筋綁紮完成 —— 放樣線、插筋＋續接器交錯 75 cm（高於圍束區）、箍筋第一箍 5 cm／L0 @10／中段 @15、
+        //      135° 彎鉤四向輪替、繫筋、間隔器、接頭箍筋先吊高（橘）、柱內配管 ≦ 5 cm 直通（在繫筋格內、盒子避開主筋與箍筋）；
+        //      1F 柱 90 cm：主筋在梁柱接頭內以 1:6 斜度內彎 5 cm，再伸出 1FL 成上層預留筋
+        qc1(g) { const { Geo, MC, R, part } = QCM, N = () => new Geo();
+          QCM.kit(g, 27, 11, -3.2, (k) => {
+            const S = 0.5, hs = 0.449, o = 0.422, LOW = 1.1, HIGH = 1.85, sTop = 4.2, Hn = 3.4, L0 = 1.0, nx = [1.0, 1.75];
+            const P16 = []; { const s = [-o, -o / 2, 0, o / 2]; for (const v of s) P16.push([v, -o]); for (const v of s) P16.push([o, v]); for (const v of s) P16.push([-v, o]); for (const v of s) P16.push([-o, -v]); }
+            const gL = N(), lw = 0.03, l0 = 0.004, l1 = 0.012, lx = (a, b, z) => gL.bx(a, l0, z - lw / 2, b, l1, z + lw / 2, false), lz = (a, b, x) => gL.bx(x - lw / 2, l0, a, x + lw / 2, l1, b, false);
+            lx(-S, S, -S); lx(-S, S, S); lz(-S, S, -S); lz(-S, S, S);                                                   // 放樣：柱外框
+            for (const sg of [-1, 1]) { lx(S, 2.8, sg * 0.25); lx(-2.8, -S, sg * 0.25); lz(S, 2.8, sg * 0.25); lz(-2.8, -S, sg * 0.25); }   // 梁線（兩條、梁寬 50 cm）
+            part(k, gL, { color: MC.red, emi: [0.25, 0.02, 0.02], anim: 'none', edge: 0 });
+            const gD = N(), gC = N(), gM = N();
+            P16.forEach(([x, z], i) => { const yc = i % 2 ? HIGH : LOW;
+              gD.cy([x, 0, z], [x, yc - 0.05, z], 0.016, 6);                                                             // 筏基插筋（長短交錯）
+              gC.cy([x, yc - 0.05, z], [x, yc + 0.08, z], 0.034, 8, true);                                               // 續接器：1.1／1.85 m 交錯 75 cm
+              const f = (o - 0.05) / o, b0 = Hn + 0.15, b1 = b0 + 0.3;                                                    // 1:6 內彎（接頭內，梁底以上）
+              gM.cy([x, yc + 0.08, z], [x, b0, z], 0.016, 6).cy([x, b0, z], [x * f, b1, z * f], 0.016, 6).cy([x * f, b1, z * f], [x * f, sTop + nx[i % 2], z * f], 0.016, 6); });   // 主筋：上至 1FL 上 1.0／1.75 m（上層預留筋長短交錯）
+            part(k, gD, { color: MC.rebar, edge: 0, dur: 0.5 });
+            part(k, gC, { color: MC.steel, edge: 0, delay: 0.35, dur: 0.4 });
+            part(k, gM, { color: MC.rebar, edge: 0, delay: 0.6, dur: 0.9 });
+            const hy = [...R(0.05, 0.95, 0.1), ...R(1.1, 2.3, 0.15), ...R(2.45, 3.35, 0.1)];
+            const gH = N(), gT = N();
+            hy.forEach((yy, q) => { gH.hoop(0, yy, 0, 2 * hs, 2 * hs, 0.011);
+              const [sx, sz] = [[-1, -1], [1, -1], [1, 1], [-1, 1]][q % 4], c = [sx * hs, sz * hs];                         // 135° 彎鉤（≧ 6db 且 ≧ 7.5 cm），四向輪替
+              gH.cy([c[0], yy, c[1]], [c[0] - sx * 0.088, yy + 0.008, c[1] - sz * 0.036], 0.011, 5).cy([c[0], yy, c[1]], [c[0] - sx * 0.036, yy + 0.016, c[1] - sz * 0.088], 0.011, 5);
+              [-o / 2, 0, o / 2].forEach((v, j) => { const yt = yy + 0.022, f = (q + j) % 2 ? 1 : -1;                       // 繫筋：每支主筋皆受束制，一端 135°、一端 90°，相鄰交替
+                gT.cy([-hs, yt, v], [hs, yt, v], 0.009, 4).cy([f * hs, yt, v], [f * (hs - 0.06), yt, v + 0.062], 0.009, 4).cy([-f * hs, yt, v], [-f * hs, yt, v + 0.08], 0.009, 4);
+                gT.cy([v, yt + 0.012, -hs], [v, yt + 0.012, hs], 0.009, 4).cy([v, yt + 0.012, f * hs], [v + 0.062, yt + 0.012, f * (hs - 0.06)], 0.009, 4).cy([v, yt + 0.012, -f * hs], [v + 0.08, yt + 0.012, -f * hs], 0.009, 4); }); });
+            part(k, gH, { color: MC.rebar, edge: 0, delay: 1.3, dur: 1.3 });
+            part(k, gT, { color: MC.tie, edge: 0, delay: 1.7, dur: 1.3 });
+            const gJ = N(); for (let q = 0; q < 5; q++) gJ.hoop(0, sTop + 0.2 + q * 0.05, 0, 2 * hs, 2 * hs, 0.011);   // 梁柱接頭箍筋先吊高，梁筋穿完再降下
+            part(k, gJ, { color: MC.joint, edge: 0, delay: 2.1, anim: 'drop', dropH: 0.7 });
+            part(k, N().bx(-0.52, 0, -0.52, 0.52, L0, 0.52, false).bx(-0.52, Hn - L0, -0.52, 0.52, Hn, 0.52, false), { color: MC.water, op: 0.16, emi: [0.05, 0.15, 0.25], anim: 'fade', delay: 2.3 });   // 圍束區 L0
+            const gS = N(); for (const yy of [0.45, 1.45, 2.45]) for (const q of [-0.2, 0.2]) { const a = hs + 0.011, b = S;   // 間隔器：每面 2 個 × 3 層
+              gS.cy([q, yy, a], [q, yy, b], 0.035, 8, true).cy([q, yy, -a], [q, yy, -b], 0.035, 8, true).cy([a, yy, q], [b, yy, q], 0.035, 8, true).cy([-a, yy, q], [-b, yy, q], 0.035, 8, true); }
+            part(k, gS, { color: MC.spacer, edge: 0, delay: 2.5 });
+            part(k, N().cy([0.105, 0, 0.32], [0.105, Hn, 0.32], 0.024, 8).cy([0.105, 1.33, 0.32], [0.105, 1.33, 0.4], 0.02, 8).bx(0.055, 1.28, 0.4, 0.155, 1.38, 0.495), { color: MC.pipe, edge: 0, delay: 2.7 });   // 配管：管徑 ≦ 5 cm、直通（繫筋格內）；盒在主筋與箍筋之間、不凸出柱面
+          }, [[26.35, 10.35, -3.25, 27.65, 11.65, 3.2, QCUT.GRP.CAGE | QCUT.GRP.FORM]]); },
+
+        // ---- 柱牆檢查 ②：A棟西核電梯牆（X 38.85，客梯 A1～A3 門洞）＋分隔牆 T 字、梯廳東北角隅 —— 雙層 @20、開口補強（順向＋斜角＋寬止筋）、
+        //      T 字（30d 彎鉤＋固定鋼筋 4 支）、角隅（L 形筋＋4 支）、間隔器與寬止筋 H@5 格 V@4 格、單面模與開口標示
+        qc2(g) { const { Geo, MC, RB, R, part } = QCM, N = () => new Geo(), W = QCM.W;
+          QCM.kit(g, 38.85, 27.5, -3.2, (k) => {
+            const DOORS = [[-2.95, -1.85], [-0.55, 0.55], [1.85, 2.95]].map(([a0, a1]) => ({ a0, a1, y0: 0, y1: 2.2 }));
+            const NW = { axis: 'x', c: -5.07, a: -2.35, b: 4.15, t: 0.15, ops: [], endA: 'col', endB: 'end' };
+            const EW = { axis: 'z', c: 0, a: -4.995, b: 5.0, t: 0.2, ops: DOORS, endA: 'end', endB: 'end' };
+            const LW = { axis: 'z', c: 4.05, a: -4.995, b: -3.4, t: 0.2, ops: [], endA: 'end', endB: 'cut' }, LWd = { ...LW, b: 5.0 };   // 梯廳牆：先綁東北角隅段，其餘僅插筋
+            const DV = [-3.6, -1.2, 1.2, 3.6].map(c => ({ axis: 'x', c, a: -2.35, b: -0.1, t: 0.2, ops: [], endA: 'cut', endB: 'end' }));
+            const ALL = [NW, EW, LW, ...DV], hP = 2.4, vTop = 3.0;
+            const gDw = N(); W.dowels(gDw, [NW, EW, LWd, ...DV], 0.8); part(k, gDw, { color: MC.rebar, edge: 0, dur: 0.4 });
+            const gM = N(); W.mesh(gM, ALL, 0, hP, vTop); part(k, gM, { color: MC.rebar, edge: 0, delay: 0.3, dur: 1.1 });
+            const gR = N();
+            DOORS.forEach(q => W.trims(gR, EW, q, 'LRT', ['TL', 'TR']));                         // 開口補強：順向 #5（四周、兩層）＋斜角 #4 單排 2 支
+            DV.forEach(d => W.tee(gR, d, EW, 0, hP, vTop, 'b'));                                  // 分隔牆 T 字接電梯牆
+            W.tee(gR, EW, NW, 0, hP, vTop, 'a');                                                    // 電梯牆 T 字接北牆
+            W.corner(gR, LW, 'a', NW, 'b', 0, hP, vTop);                                             // 梯廳東北角隅
+            part(k, gR, { color: RB, edge: 0, delay: 0.9, dur: 0.9 });
+            const gU = N(); DOORS.forEach(q => W.ubars(gU, EW, q)); part(k, gU, { color: MC.yellow, edge: 0, delay: 1.3 });   // 收頭筋：U 形封住開口邊（寬止筋＝灰色繫筋，H@5 格、V@4 格）
+            const [gSp, gTi] = W.spacers(ALL, 0, hP); part(k, gSp, { color: MC.spacer, edge: 0, delay: 1.5 }); part(k, gTi, { color: [0.36, 0.38, 0.4], edge: 0, delay: 1.5 });
+            // 單面模：電梯牆井道側、分隔牆北側、北牆北側先封（梯廳牆仍在綁筋，尚未立模）；開口於模板上先標示（北側門洞），其餘已釘開口模板
+            const gF = N();
+            W.face(gF, EW, -1, 0, hP + 0.05, [DOORS[1], DOORS[2]]); DV.forEach(d => W.face(gF, d, -1, 0, hP + 0.05, [])); W.face(gF, NW, -1, 0, hP + 0.05, []);
+            [DOORS[1], DOORS[2]].forEach(q => W.buck(gF, EW, q));
+            part(k, gF, { color: MC.form, op: 0.55, edge: 0.5, delay: 1.7 });
+            const gMk = N(); W.mark(gMk, EW, DOORS[0], -1); part(k, gMk, { color: MC.red, emi: [0.35, 0.03, 0.03], anim: 'fade', delay: 2.1, edge: 0 });
+            const gB = N(); W.braces(gB, EW, -1, 1.6, 1.0, [-4.3, -3.25, -1.6, -0.8, 0.8, 1.6, 3.25, 4.3]); DV.forEach(d => W.braces(gB, d, -1, 1.6, 0.9)); part(k, gB, { color: [0.62, 0.68, 0.72], edge: 0, delay: 2.0 });
+          }, [[36.5, 22.35, -3.25, 43.2, 32.5, 1.2, QCUT.GRP.CAGE | QCUT.GRP.FORM]]); },
+
+        // ---- 柱牆檢查 ③：A1 北側外牆（X 11.31～15.28，35 cm），第 11 天下半部封模中 —— 插筋、垂直筋 180° 防穿刺彎頭平行牆面、−80 止水帶置中（一半埋入）＋固定夾、
+        //      外側夾板骨架＋防水毯（綁筋前先貼，高於牆筋頂 15～20 cm，接續上升搭接 10 cm）、內側部分封板＋清潔口（一處開啟沖洗）、貫材螺桿、斜撐
+        qc3(g) { const { Geo, MC, RB, R, part } = QCM, N = () => new Geo(), W = QCM.W;
+          QCM.kit(g, 13.295, -2.925, -3.2, (k) => {
+            const w = { axis: 'x', c: 0, a: -1.985, b: 1.985, t: 0.35, cov: 0.058, ops: [], endA: 'cut', endB: 'cut' }, hP = 2.4, vTop = 3.0, oo = w.t / 2 - w.cov;
+            // 外側：夾板骨架先立、防水毯貼在夾板內面（與混凝土面密貼），分兩段向上接續、搭接 10 cm，頂端高於牆筋頂 15～20 cm
+            const gPw = N(); gPw.bx(w.a, 0, -0.205, w.b, vTop + 0.28, -0.175); for (const x of R(w.a + 0.2, w.b - 0.1, 0.45)) gPw.bx(x - 0.03, 0, -0.27, x + 0.03, vTop + 0.28, -0.205);
+            part(k, gPw, { color: MC.form, op: 0.85, edge: 0.35, anim: 'none' });
+            part(k, N().bx(w.a, 0, -0.175, w.b, 1.12, -0.164, false).bx(w.a, 1.0, -0.176, w.b, vTop + 0.25, -0.163, false), { color: MC.blanket, edge: 0, anim: 'fade', dur: 0.4 });
+            part(k, N().bx(w.a, 1.0, -0.164, w.b, 1.1, -0.159, false), { color: MC.yellow, emi: [0.3, 0.2, 0], edge: 0, anim: 'fade', delay: 0.3 });   // 搭接 10 cm
+            const gDw = N(); W.dowels(gDw, [w], 0.8); part(k, gDw, { color: MC.rebar, edge: 0, delay: 0.3, dur: 0.4 });
+            const gM = N(); W.mesh(gM, [w], 0, hP, vTop, true); part(k, gM, { color: MC.rebar, edge: 0, delay: 0.6, dur: 1.0 });
+            const [gSp, gTi] = W.spacers([w], 0, hP); part(k, gSp, { color: MC.spacer, edge: 0, delay: 1.0 }); part(k, gTi, { color: [0.36, 0.38, 0.4], edge: 0, delay: 1.0 });
+            const gWs = N(); gWs.bx(w.a, hP - 0.15, -0.006, w.b, hP + 0.15, 0.006).cy([w.a, hP, 0], [w.b, hP, 0], 0.016, 8);                 // PVC 止水帶：寬 30 cm、中心球對準施工縫
+            for (const o of [-0.11, -0.07, 0.07, 0.11]) gWs.bx(w.a, hP + o - 0.006, -0.014, w.b, hP + o + 0.006, 0.014, false);
+            part(k, gWs, { color: [0.9, 0.91, 0.89], edge: 0.3, delay: 1.3 });
+            part(k, N().bx(0.6, hP - 0.16, -0.018, 0.72, hP + 0.16, 0.018), { color: MC.stop, emi: [0.2, 0.15, 0], edge: 0.5, delay: 1.5 });     // 搭接 ≧ 10 cm
+            const gCl = N(); for (const x of R(w.a + 0.3, w.b - 0.2, 0.6)) gCl.pl([[x, hP - 0.2, -oo + 0.01], [x, hP + 0.17, -0.02], [x, hP + 0.17, 0.02], [x, hP - 0.2, oo - 0.01]], 0.008, 4);   // 固定夾＋鐵絲綁在兩側筋
+            part(k, gCl, { color: [0.55, 0.36, 0.25], edge: 0, delay: 1.5 });
+            const gF = N(); gF.bx(w.a, 0, 0.175, -0.25, hP + 0.05, 0.205);                                                                // 內側封到一半（右半露出鋼筋與止水帶）
+            part(k, gF, { color: MC.form, op: 0.6, edge: 0.5, delay: 1.8 });
+            const gWa = N(); for (const yy of [0.35, 1.25, 2.15]) { for (const zz of [-0.3, -0.33]) gWa.cy([w.a, yy, zz], [w.b, yy, zz], 0.022, 6); for (const zz of [0.24, 0.27]) gWa.cy([w.a, yy, zz], [-0.27, yy, zz], 0.022, 6);
+              for (const x of R(w.a + 0.35, -0.4, 0.9)) gWa.cy([x, yy + 0.035, -0.36], [x, yy + 0.035, 0.3], 0.008, 4); }                         // 貫材＋螺桿（依模板計算書）
+            part(k, gWa, { color: MC.steel, edge: 0, delay: 2.0 });
+            const gBr = N(); for (const x of R(w.a + 0.4, -0.4, 1.2)) gBr.cy([x, 0.02, 1.45], [x, 1.9, 0.23], 0.022, 6); part(k, gBr, { color: [0.62, 0.68, 0.72], edge: 0, delay: 2.1 });   // 斜撐
+            const gCo = N(); for (const x of [-1.55, -0.75]) gCo.bx(x - 0.15, 0.02, 0.205, x + 0.15, 0.2, 0.215); part(k, gCo, { color: MC.dark, edge: 0.6, delay: 2.2 });   // 清潔口（封緊）
+            const gOp = N(); gOp.bx(-1.3, 0.02, 0.205, -1.27, 0.2, 0.22).bx(-1.03, 0.02, 0.205, -1.0, 0.2, 0.22).bx(-1.3, 0.2, 0.205, -1.0, 0.215, 0.22); part(k, gOp, { color: MC.yellow, emi: [0.25, 0.18, 0], edge: 0.5, delay: 2.2 });   // 清潔口開啟沖洗
+            part(k, N().cy([-1.15, 0.1, 0.9], [-1.15, 0.09, -0.05], 0.03, 8), { color: MC.water, emi: [0.1, 0.3, 0.5], anim: 'fade', delay: 2.5 });   // 高壓水槍由清潔口沖出
+          }, [[11.31, -3.4, -3.25, 15.28, -2.45, 0.2, QCUT.GRP.CAGE | QCUT.GRP.FORM]]); },
+
+        // ---- 梁版檢查 ①：A1 區 1FL 梁柱接頭（柱 27, 11），第 46 天 —— 梁模＋版模、梁主筋／腰筋、箍筋端部 2H 內 @10（第一支離柱面 5 cm）、梁柱接頭箍筋降下（落下動畫）、
+        //      小梁交接處大梁箍筋加密（距小梁面 5 cm 起、兩側各 h/2（h＝小梁深）範圍 @10）、穿梁套管（2H 以外、梁深中央）＋斜向／上下水平／兩側加箍（一般箍筋避開套管）、
+        //      版上下層筋、柱主筋於接頭內 1:6 內彎成 1F 柱（90 cm）上層預留筋、長短交錯
+        qb1(g) { const { Geo, MC, RB, R, part } = QCM, N = () => new Geo();
+          QCM.kit(g, 27, 11, 1.0, (k) => {
+            const X0 = -4.0, X1 = 6.6, Z0 = -3.5, Z1 = 3.5, bw = 0.25, yb = -0.8, ys = -0.25, sb = { x: 4.07, w: 0.175, d: 0.6 }, xs = 2.75;   // 小梁沿 B1F 內牆線 X 31.07（示意）；套管軸線距柱心 2.75 m
+            const GIR = [{ ax: 'x', s0: X0, s1: -0.5 }, { ax: 'x', s0: 0.5, s1: X1 }, { ax: 'z', s0: Z0, s1: -0.5 }, { ax: 'z', s0: 0.5, s1: Z1 }];
+            const P = (b, s, y, o) => b.ax === 'x' ? [s, y, o] : [o, y, s], B = (gg, b, s0, s1, y0, y1, o0, o1) => b.ax === 'x' ? gg.bx(s0, y0, o0, s1, y1, o1) : gg.bx(o0, y0, s0, o1, y1, s1);
+            // 模板：柱上段（−80 以上）、梁底＋側模、小梁模、版模（避開梁與柱）
+            const gF = N(); for (const [x, z, wx, wz] of [[0.515, 0, 0.03, 1.06], [-0.515, 0, 0.03, 1.06], [0, 0.515, 1.0, 0.03], [0, -0.515, 1.0, 0.03]]) gF.bc(x, (-1.95 + yb) / 2, z, wx, yb + 1.95, wz);
+            for (const [sx, sz] of [[1, 1], [1, -1], [-1, 1], [-1, -1]]) { gF.bx(sx > 0 ? 0.5 : -0.53, yb, sz > 0 ? 0.25 : -0.5, sx > 0 ? 0.53 : -0.5, ys, sz > 0 ? 0.5 : -0.25); gF.bx(sx > 0 ? 0.25 : -0.5, yb, sz > 0 ? 0.5 : -0.53, sx > 0 ? 0.5 : -0.25, ys, sz > 0 ? 0.53 : -0.5); }   // 接頭四角補板
+            GIR.forEach(b => { B(gF, b, b.s0, b.s1, yb - 0.04, yb, -bw - 0.03, bw + 0.03); B(gF, b, b.s0, b.s1, yb, ys, -bw - 0.03, -bw); B(gF, b, b.s0, b.s1, yb, ys, bw, bw + 0.03); });
+            gF.bx(sb.x - sb.w - 0.03, -sb.d - 0.04, bw + 0.03, sb.x + sb.w + 0.03, -sb.d, Z1).bx(sb.x - sb.w - 0.03, -sb.d, bw + 0.03, sb.x - sb.w, ys, Z1).bx(sb.x + sb.w, -sb.d, bw + 0.03, sb.x + sb.w + 0.03, ys, Z1);
+            const deck = (x0, x1, z0, z1) => { if (x1 - x0 > 0.05 && z1 - z0 > 0.05) gF.bx(x0, ys - 0.03, z0, x1, ys, z1); };
+            [[X0, -0.28, Z0, -0.28], [0.28, X1, Z0, -0.28], [X0, -0.28, 0.28, Z1], [0.28, sb.x - sb.w - 0.03, 0.28, Z1], [sb.x + sb.w + 0.03, X1, 0.28, Z1]].forEach(r => deck(...r));
+            part(k, gF, { color: MC.form, op: 0.62, edge: 0.45, anim: 'none' });
+            // 版筋：下層 @25 已鋪；上層只鋪到柱西側（綁紮中），梁筋、箍筋加密與套管補強仍看得到；柱位留空
+            const gSR = N(); for (const [yy, dy, xe] of [[ys + 0.04, 0, X1], [-0.06, 0.016, -0.6]]) { for (const z of R(Z0 + 0.1, Z1 - 0.1, 0.25)) { if (Math.abs(z) < 0.5) { gSR.cy([X0, yy, z], [-0.52, yy, z], 0.008, 4); if (xe > 0.52) gSR.cy([0.52, yy, z], [xe, yy, z], 0.008, 4); } else gSR.cy([X0, yy, z], [xe, yy, z], 0.008, 4); }
+              for (const x of R(X0 + 0.1, xe - 0.1, 0.25)) { if (Math.abs(x) < 0.5) { gSR.cy([x, yy + 0.016 - dy, Z0], [x, yy + 0.016 - dy, -0.52], 0.008, 4); gSR.cy([x, yy + 0.016 - dy, 0.52], [x, yy + 0.016 - dy, Z1], 0.008, 4); } else gSR.cy([x, yy + 0.016 - dy, Z0], [x, yy + 0.016 - dy, Z1], 0.008, 4); } }
+            part(k, gSR, { color: MC.rebar, edge: 0, delay: 1.3, dur: 0.8 });
+            // 梁筋：上下各 4 支（穿過柱內）、腰筋；箍筋端部 2H（1.6 m）內 @10、中段 @15
+            const gBR = N(), gST = N(), gDN = N();
+            for (const ax of ['x', 'z']) { const b = { ax }, a0 = ax === 'x' ? X0 : Z0, a1 = ax === 'x' ? X1 : Z1;
+              for (const o of [-0.18, -0.06, 0.06, 0.18]) { gBR.cy(P(b, a0, -0.09, o), P(b, a1, -0.09, o), 0.016, 5); gBR.cy(P(b, a0, yb + 0.07, o), P(b, a1, yb + 0.07, o), 0.016, 5); }
+              for (const o of [-0.19, 0.19]) gBR.cy(P(b, a0, -0.45, o), P(b, a1, -0.45, o), 0.011, 4); }
+            GIR.forEach(b => { const dir = b.s1 > 0 ? 1 : -1, face = dir > 0 ? 0.5 : -0.5, far = dir > 0 ? b.s1 : b.s0;
+              for (let d = 0.05; d < Math.abs(far - face) - 0.03; d += d < 1.6 ? 0.1 : 0.15) { const s = face + dir * d;
+                if (b.ax === 'x' && Math.abs(s - sb.x) < sb.w + 0.05 + sb.d / 2 + 0.035) continue;                          // 加密區由藍色箍筋取代
+                if (b.ax === 'x' && dir > 0 && Math.abs(s - xs) < 0.21) continue;                                                 // 套管處：一般箍筋避開，由兩側加箍取代
+                if (b.ax === 'x') gST.hoop(s, -0.41, 0, 0.68, 0.42, 0.009, 'x'); else gST.hoop(0, -0.41, s, 0.42, 0.68, 0.009, 'z'); } });
+            for (const s of [sb.x - 0.1, sb.x, sb.x + 0.1]) gST.hoop(s, -0.41, 0, 0.68, 0.42, 0.009, 'x');                                   // 小梁寬度內照常配置
+            for (const sd of [-1, 1]) for (let q = 0; q <= 3; q++) gDN.hoop(sb.x + sd * (sb.w + 0.05 + q * 0.1), -0.41, 0, 0.69, 0.43, 0.01, 'x');   // 距小梁面 5 cm 起、兩側各 h/2（30 cm）範圍 @10 加密
+            part(k, gBR, { color: MC.rebar, edge: 0, delay: 0.3, dur: 0.8 }); part(k, gST, { color: MC.tie, edge: 0, delay: 0.7, dur: 1 }); part(k, gDN, { color: RB, edge: 0, delay: 1.0 });
+            // 小梁筋（上下各 2 支、箍筋 @15，主筋錨入大梁）
+            const gSB = N(); for (const o of [-0.1, 0.1]) { gSB.cy([sb.x + o, -0.1, -0.15], [sb.x + o, -0.1, Z1], 0.014, 5); gSB.cy([sb.x + o, -sb.d + 0.06, 0.05], [sb.x + o, -sb.d + 0.06, Z1], 0.014, 5); }
+            for (const z of R(0.35, Z1 - 0.05, 0.15)) gSB.hoop(sb.x, -0.33, z, 0.27, 0.48, 0.008, 'z');
+            part(k, gSB, { color: MC.rebar, edge: 0, delay: 0.8 });
+            // 柱主筋穿過接頭成上層預留筋（1.0／1.75 m 長短交錯）；接頭箍筋於梁筋穿完後降下（落下動畫）
+            const o = 0.422, gCM = N(); { const s = [-o, -o / 2, 0, o / 2], pts = []; for (const v of s) pts.push([v, -o]); for (const v of s) pts.push([o, v]); for (const v of s) pts.push([-v, o]); for (const v of s) pts.push([-o, -v]);
+              const f = (o - 0.05) / o; pts.forEach(([x, z], i) => gCM.cy([x, -1.95, z], [x, -0.65, z], 0.016, 6).cy([x, -0.65, z], [x * f, -0.35, z * f], 0.016, 6).cy([x * f, -0.35, z * f], [x * f, i % 2 ? 1.75 : 1.0, z * f], 0.016, 6)); }   // 接頭內 1:6 內彎 5 cm
+            part(k, gCM, { color: MC.rebar, edge: 0, anim: 'none' });
+            const gJ = N(); for (const yy of R(yb + 0.05, -0.05, 0.1)) gJ.hoop(0, yy, 0, 0.898, 0.898, 0.011);   // 梁柱接頭 @10
+            part(k, gJ, { color: MC.joint, edge: 0, anim: 'drop', dropH: 0.9, delay: 1.6, dur: 1.1 });
+            // 穿梁套管（大梁東側，距柱面 2.25 m ＞ 2H、梁深中央 Ø13 cm）＋補強筋（菱形斜筋、上下水平筋、兩側加箍），補強筋不得穿入套管
+            const yc = -0.45, gSl = N(), gSd = N(); gSl.cy([xs, yc, -0.33], [xs, yc, 0.33], 0.065, 12, true);
+            for (const zf of [-0.17, 0.17]) { for (const [sx, sy] of [[-1, 1], [1, 1], [-1, -1], [1, -1]]) { const mx = xs + sx * 0.12, my = yc + sy * 0.12, dx = 1 / Math.SQRT2, dy = -sx * sy / Math.SQRT2, L = 0.17; gSd.cy([mx - dx * L, my - dy * L, zf], [mx + dx * L, my + dy * L, zf], 0.011, 4); }
+              for (const yy of [yc - 0.16, yc + 0.16]) gSd.cy([xs - 0.3, yy, zf], [xs + 0.3, yy, zf], 0.011, 4); }
+            for (const dxs of [-0.16, -0.1, 0.1, 0.16]) gSd.hoop(xs + dxs, -0.41, 0, 0.69, 0.43, 0.009, 'x');                                   // 兩側加箍（不穿入套管）
+            part(k, gSl, { color: MC.pipe, edge: 0, delay: 1.9 }); part(k, gSd, { color: RB, edge: 0, delay: 2.1 });
+          }, [[23.0, 7.5, -0.97, 33.6, 14.5, 3.0, QCUT.GRP.CAGE | QCUT.GRP.FORM | QCUT.GRP.DECK | QCUT.GRP.BEAM | QCUT.GRP.SLABR]]); },
+
+        // ---- 梁版檢查 ②：A1 區 1FL 版筋（第 46 天）＋A棟西核安全梯 —— 版開口補強依品管網頁：機電模板盒（100×50 cm 示意，樓梯間南側走道版 X 33.9～34.9、Y 33.7～34.2）四周
+        //      x、y 向上下層各 2 支（延伸 70 cm）＋四角斜向放大一號 1 支；樓梯間內為 B1F→1FL 雙跑樓梯的底模、踏步側模與樓梯筋、中間平台補強筋（版筋沿用場景的上下層 @25）
+        qb2(g) { const { Geo, MC, RB, R, part } = QCM, N = () => new Geo();
+          QCM.kit(g, 33.15, 22.5, 1.0, (k) => {
+            const W0 = 2.65, yTop = -0.06, yBot = -0.205, q = { x0: 0.75, x1: 1.75, z0: 11.2, z1: 11.7 };
+            part(k, N().bx(q.x0, -0.25, q.z0, q.x1, 0.0, q.z1), { color: MC.form, op: 0.92, edge: 0.6, anim: 'none' });                           // 模板盒（澆置後成為版開口）
+            const gOB = N(); for (const yy of [yBot + 0.03, yTop - 0.032]) for (const d of [0.08, 0.16]) {
+              gOB.cy([q.x0 - 0.7, yy, q.z0 - d], [q.x1 + 0.7, yy, q.z0 - d], 0.017, 5).cy([q.x0 - 0.7, yy, q.z1 + d], [q.x1 + 0.7, yy, q.z1 + d], 0.017, 5);
+              gOB.cy([q.x0 - d, yy + 0.02, q.z0 - 0.7], [q.x0 - d, yy + 0.02, q.z1 + 0.7], 0.017, 5).cy([q.x1 + d, yy + 0.02, q.z0 - 0.7], [q.x1 + d, yy + 0.02, q.z1 + 0.7], 0.017, 5); }
+            for (const [cx, cz, sx, sz] of [[q.x0, q.z0, -1, -1], [q.x1, q.z0, 1, -1], [q.x0, q.z1, -1, 1], [q.x1, q.z1, 1, 1]]) { const mx = cx + sx * 0.14, mz = cz + sz * 0.14, L = 0.4, dx = 1 / Math.SQRT2, dz = -sx * sz / Math.SQRT2;
+              gOB.cy([mx - dx * L, yTop - 0.004, mz - dz * L], [mx + dx * L, yTop - 0.004, mz + dz * L], 0.022, 6); }                              // 斜向放大一號 1 支（與角隅裂縫方向垂直）
+            part(k, gOB, { color: RB, edge: 0, delay: 0.5, dur: 0.8 });
+            // 樓梯（B1F −320 → 1FL +100，26 級：級高 16.2、級深 26；西半跑由南往北上到北端中間平台，東半跑再往南上到 1FL）——底模、踏步側模、樓梯筋與平台補強筋
+            const rise = 4.2 / 26, tread = 0.26, xm = W0 / 2, yN = 27.42 - 22.5, yM = yN + 1.4, run = 12 * tread, ySt = yM + run, yB = -4.2, zL = yB + 13 * rise;
+            const gSt = N(), gSb = N();
+            const q4 = (g4, a, b, c, d) => { const n = [0, 1, 0]; g4._quad(a, b, c, d, n); g4._quad(a, d, c, b, n); };
+            const flight = (xa, xb, zs, dir, y0) => { const ze = zs + dir * run, ye = y0 + 12 * rise, th = 0.18;
+              for (let i = 0; i <= 12; i++) { const zi = zs + dir * tread * i, ya = y0 + rise * i; gSt.bx(xa, ya, dir < 0 ? zi : zi - 0.02, xb, ya + rise, dir < 0 ? zi + 0.02 : zi, false); }   // 踏步豎板模（含平台、樓版邊第 13 級）
+              q4(gSt, [xa, y0 - th, zs], [xb, y0 - th, zs], [xb, ye - th, ze], [xa, ye - th, ze]);                                                            // 斜底模
+              for (const x of [xa - 0.02, xb + 0.02]) q4(gSt, [x, y0 - th, zs], [x, ye - th, ze], [x, ye + rise, ze], [x, y0 + rise, zs]);                      // 側模
+              for (const x of R(xa + 0.08, xb - 0.08, 0.15)) gSb.cy([x, y0 - th + 0.05, zs], [x, ye - th + 0.05, ze], 0.009, 4);                                // 梯段下層主筋（沿斜向）
+              for (let q = 0; q <= 12; q += 1) { const z = zs + dir * q * tread, y = y0 - th + 0.07 + q * rise; gSb.cy([xa + 0.05, y, z], [xb - 0.05, y, z], 0.007, 4); } };   // 分佈筋
+            flight(0.05, xm - 0.03, ySt, -1, yB); flight(xm + 0.03, W0 - 0.05, yM, 1, zL);
+            gSt.bx(0, zL - 0.22, yN, W0, zL - 0.2, yM);                                                                                       // 中間平台底模
+            for (const x of R(0.1, W0 - 0.1, 0.15)) gSb.cy([x, zL - 0.15, yN + 0.05], [x, zL - 0.15, yM - 0.05], 0.008, 4);
+            for (const z of R(yN + 0.1, yM - 0.1, 0.2)) gSb.cy([0.05, zL - 0.13, z], [W0 - 0.05, zL - 0.13, z], 0.008, 4);
+            part(k, gSt, { color: MC.form, op: 0.6, edge: 0.4, delay: 0.3, anim: 'none' });
+            part(k, gSb, { color: MC.rebar, edge: 0, delay: 0.5, dur: 0.9 });
+            const kS = rise / tread, gLR = N(); for (const x of R(xm + 0.12, W0 - 0.12, 0.2)) gLR.pl([[x, zL - 0.12, yM - 0.6], [x, zL - 0.12, yM], [x, zL - 0.12 + kS * 0.8, yM + 0.8]], 0.012, 5);   // 平台與上行梯段交接補強筋：沿梯段下層筋伸入平台 60 cm
+            part(k, gLR, { color: RB, edge: 0, delay: 1.2 });
+          }, [[33.83, 33.63, 0.7, 34.97, 34.27, 1.06, QCUT.GRP.SLABR]]); },
+
+        // ---- 梁版檢查 ③：A1 區 1FL 澆置前（第 50.5 天）—— 標高器每 1.2～1.5 m 一處（依標高器高度抹平）、柱預留筋圍束區包保鮮膜、紅外線水準儀＋標尺複核 +100
+        qb3(g) { const { Geo, MC, R, part, lin } = QCM, N = () => new Geo();
+          QCM.kit(g, 22.5, 27.5, 1.0, (k) => {
+            const gLv = N(), gFl = N();
+            const busy = [[-1.5, -2.2], [1.6, 1.6], [1.95, 1.6], [-1.9, -2.6]];                                                        // 水準儀、標尺人員、另一人位置不放
+            for (const x of lin(-3.7, 3.7, 1.5)) for (const z of lin(-4.65, 4.65, 1.5)) { if (busy.some(([bx, bz]) => Math.hypot(x - bx, z - bz) < 0.45)) continue;
+              gLv.cy([x, -0.25, z], [x, 0.32, z], 0.012, 5).cy([x, -0.005, z], [x, 0.005, z], 0.05, 8, true); gFl.bx(x + 0.012, 0.2, z - 0.004, x + 0.17, 0.3, z + 0.004, false); }   // 標高器全版約 1.48 × 1.33 m
+            part(k, gLv, { color: [0.98, 0.82, 0.08], emi: [0.15, 0.1, 0], edge: 0, dur: 0.6 }); part(k, gFl, { color: [0.98, 0.82, 0.08], emi: [0.2, 0.14, 0], edge: 0, delay: 0.4 });
+            const gW = N(); for (const [x, z] of [[-4.5, -5.5], [4.5, -5.5], [-4.5, 5.5], [4.5, 5.5]]) gW.bx(x - 0.47, 0.03, z - 0.47, x + 0.47, 0.9, z + 0.47);   // 柱預留筋圍束區包保鮮膜（避免澆置汙染）
+            part(k, gW, { color: [0.82, 0.9, 0.98], op: 0.42, edge: 0.5, anim: 'fade', delay: 0.8 });
+            const gT = N(); gT.cy([-1.5, 0, -2.2], [-1.5, 1.3, -2.2], 0.02, 4).cy([-1.8, 0, -1.9], [-1.5, 1.3, -2.2], 0.02, 4).cy([-1.2, 0, -2.5], [-1.5, 1.3, -2.2], 0.02, 4).bx(-1.6, 1.3, -2.3, -1.4, 1.5, -2.1);   // 紅外線水準儀
+            part(k, gT, { color: [0.2, 0.22, 0.24], edge: 0, delay: 1.0 });
+            const gC = QCM.person(N(), 1.6, 1.6, 0, null); gC.cy([1.95, 0, 1.6], [1.95, 2.0, 1.6], 0.02, 4);                                // 標尺人員
+            part(k, gC, { color: [0.25, 0.42, 0.6], edge: 0, delay: 1.1 });
+            part(k, N().bx(1.91, 1.39, 1.565, 2.0, 1.45, 1.635, false), { color: MC.red, emi: [0.9, 0.05, 0.05], delay: 1.4, anim: 'fade' });
+            part(k, QCM.person(N(), -1.9, -2.6, 0, null), { color: [0.95, 0.75, 0.1], edge: 0, delay: 1.0 });
+          }); },
+
+        // ---- 鋼構近看：C棟 SRC 鋼柱 +250 續接（現場）；工廠構件示意＝品管網頁的 BOX 柱製程模型（蓋板前）：U 組立、內隔板組焊、剪力釘、
+        //      蓋板前內隔板焊道 UT、缺失焊道剷除重焊（紅）、蓋板吊起待封（合格後才封；柱體 SAW 與內隔板 ESW 在蓋板之後）、外配件
+        qs1(g) { const { Geo, MC, R, part } = QCM, N = () => new Geo(); const c = HOT.col, z = G.LV1.C;
+          T.box(g, c[0] - 0.42, c[1] - 0.42, SPLICE_C - 0.12, c[0] + 0.42, c[1] + 0.42, SPLICE_C + 0.12, '#E0782A', 0.45);
+          const k = QCM.kit(g, c[0] - 3.4, c[1] + 2.2, z, (k) => {
+            const Y0 = 0.8, S = 0.3, Tp = 0.04, L = 3;
+            const gSup = N(); for (const x of [-2.2, 2.2]) gSup.bx(x - 0.25, 0, -0.45, x + 0.25, Y0, 0.45); part(k, gSup, { color: MC.dark, edge: 0.4, anim: 'none' });
+            part(k, N().bx(-L, Y0, -S, L, Y0 + Tp, S).bx(-L, Y0 + Tp, -S, L, Y0 + 0.56, -S + Tp).bx(-L, Y0 + Tp, S - Tp, L, Y0 + 0.56, S), { color: MC.steel, edge: 0.6, dur: 0.6 });
+            const gDia = N(); for (const x of [-2, 0, 2]) gDia.bx(x - 0.02, Y0 + Tp, -S + Tp, x + 0.02, Y0 + 0.56, S - Tp); for (const x of [-1, 1]) gDia.bx(x - 0.01, Y0 + Tp, -0.03, x + 0.01, Y0 + 0.3, 0.03);
+            part(k, gDia, { color: [0.55, 0.62, 0.66], edge: 0.7, delay: 0.5 });
+            const gWd = N(); for (const x of [-2, 0, 2]) { for (const zz of [-S + Tp + 0.008, S - Tp - 0.008]) for (const sx of [-1, 1]) gWd.bx(x + sx * 0.02, Y0 + Tp, zz - 0.008, x + sx * 0.035, Y0 + 0.56, zz + 0.008, false);   // 內隔板組焊（與腹板、底板）
+              for (const sx of [-1, 1]) gWd.bx(x + sx * 0.02, Y0 + Tp, -S + Tp, x + sx * 0.035, Y0 + Tp + 0.015, S - Tp, false); }
+            part(k, gWd, { color: [0.34, 0.33, 0.31], edge: 0, delay: 0.9 });
+            const gStud = N(); for (const x of R(-2.7, 2.7, 0.3)) for (const yy of [Y0 + 0.18, Y0 + 0.38]) { if (Math.abs(x % 2) < 0.06) continue; gStud.cy([x, yy, -S], [x, yy, -S - 0.08], 0.012, 6, true); gStud.cy([x, yy, S], [x, yy, S + 0.08], 0.012, 6, true); }
+            part(k, gStud, { color: [0.75, 0.75, 0.72], edge: 0, delay: 1.0 });
+            part(k, N().bx(-L, Y0 + 1.36, -S, L, Y0 + 1.4, S), { color: MC.steel, edge: 0.6, anim: 'drop', dropH: 1.2, delay: 1.2, dur: 1 });     // 蓋板：查驗合格後才封
+            const gSl = N(); for (const x of [-1.8, 1.8]) gSl.cy([x, Y0 + 1.4, 0], [x, Y0 + 3.4, 0], 0.01, 4); part(k, gSl, { color: MC.dark, edge: 0, anim: 'drop', dropH: 1.2, delay: 1.2, dur: 1 });
+            part(k, N().bx(-0.08, Y0 + 0.56, -S + 0.04, 0.08, Y0 + 0.64, -S + 0.12).cy([0, Y0 + 0.64, -S + 0.08], [0.25, Y0 + 1.1, 0.0], 0.01, 4), { color: MC.yellow, edge: 0, delay: 1.6 });   // UT 探頭：蓋板前內隔板焊道
+            part(k, QCM.person(N(), 0.45, 0.95, 0, null), { color: [0.25, 0.42, 0.6], edge: 0, delay: 1.5 });
+            part(k, N().bx(0.015, Y0 + 0.16, -S + Tp + 0.001, 0.045, Y0 + 0.44, -S + Tp + 0.02, false), { color: MC.red, emi: [0.5, 0.05, 0.05], anim: 'fade', delay: 1.8 });   // UT 缺失的內隔板焊道：剷除、重焊複驗
+            const gAcc = N(); for (const [x, s] of [[-1, 1], [-1, -1], [1.6, 1]]) { const z0 = s > 0 ? S : -S, z1 = z0 + s * 0.7, za = Math.min(z0, z1), zb = Math.max(z0, z1);
+              gAcc.bx(x - 0.15, Y0 + 0.52, za, x + 0.15, Y0 + 0.55, zb).bx(x - 0.15, Y0 + 0.05, za, x + 0.15, Y0 + 0.08, zb).bx(x - 0.01, Y0 + 0.08, za, x + 0.01, Y0 + 0.52, zb); }
+            gAcc.bx(-L - 0.04, Y0 - 0.1, -0.4, -L, Y0 + 0.7, 0.4); part(k, gAcc, { color: MC.steel, edge: 0.6, delay: 2.0 });                         // 外配件：梁接頭、端板
+          });
+          k.rotation.y = 0.35; },
 
       };
       const frames = [];
       return { T, bm, lm, KITS, frames,
-        set(k) { if (k === curK) return; if (cur) cur.visible = false; curK = k; cur = null; if (!k || !KITS[k]) return;
-          if (!cache[k]) { const g = new THREE.Group(); g.userData.k = k; KITS[k](g); scene.add(g); cache[k] = g; } cur = cache[k]; cur.visible = true; },
+        set(k) { if (k === curK) return; if (cur) cur.visible = false; curK = k; cur = null; QCUT.set(null); if (!k || !KITS[k]) return;
+          if (!cache[k]) { const g = new THREE.Group(); g.userData.k = k; KITS[k](g); scene.add(g); cache[k] = g; } cur = cache[k]; cur.visible = true;
+          if (cur.userData.reset) cur.userData.reset(); if (cur.userData.carve) QCUT.set(cur.userData.carve); },
         frame(dt, d) { if (cur && cur.userData.tick) cur.userData.tick(dt, d); } };
     })();
 
@@ -4406,9 +4836,15 @@ function buildScene() {
       if (L > MC_MAX) { L = MC_MAX; th = Math.acos(clamp(R / (MC_MAX + 0.82), 0, 1)); } if (L < MC_MIN) { L = MC_MIN; th = Math.acos(clamp(R / (MC_MIN + 0.82), 0, 1)); } thT = th; LT = L; }
     const k = clamp(dt * 1.6, 0, 1); c.th = lerp(c.th, thT, k); c.L = lerp(c.L, LT, k); const tipX = mobilePose(c);
     c.g.updateMatrixWorld(true); const tip = new THREE.Vector3(tipX + 0.82, -0.32 - 0.42, 0); c.boomG.localToWorld(tip);
-    const hookY = Math.max(tgt ? tgt.y + 0.5 : 0, 0.6); c.hook.position.set(tip.x, idle ? tip.y - 1.4 : Math.min(hookY + 1.0, tip.y - 1.4), tip.z); const pa = c.rope.geometry.attributes.position; pa.setXYZ(0, tip.x, tip.y, tip.z); pa.setXYZ(1, tip.x, c.hook.position.y + 0.45, tip.z); pa.needsUpdate = true;
+    const bmL = load === 'beam' && mode && mode.p && mode.L ? Math.max(1, mode.L - 0.6) : 0, eS = bmL ? Math.max(0.6, bmL / 2 - 0.9) : 0;   // 鋼梁：兩點吊、吊索約 45°
+    const fx = mode && mode.p ? mode.p.x : tip.x, fz = mode && mode.p ? mode.p.z : tip.z;   // 鋼構吊裝：吊鉤與吊物在落位點正上方（吊物就是結構上那一支，落位後直接併入）
+    const hookY = Math.max(tgt ? tgt.y + 0.5 : 0, 0.6); c.hook.position.set(fx, idle ? tip.y - 1.4 : Math.min(bmL ? tgt.y + 0.45 + eS : hookY + 1.0, tip.y - 1.4), fz); const pa = c.rope.geometry.attributes.position; pa.setXYZ(0, tip.x, tip.y, tip.z); pa.setXYZ(1, fx, c.hook.position.y + 0.45, fz); pa.needsUpdate = true;
     const yawW = c.g.rotation.y + c.sup.rotation.y;
-    Object.entries(c.loads).forEach(([kk, l]) => { l.visible = !idle && load === kk; if (kk === 'beam') l.scale.x = mode && mode.L ? Math.max(1, mode.L - 0.5) : 8; if (l.visible) { if (kk === 'col') l.position.set(tip.x, c.hook.position.y - 1.5 - (G.LV2.C + 1.0 - SPLICE_C) / 2, tip.z); else l.position.set(tip.x, c.hook.position.y - 0.9, tip.z); l.rotation.y = mode && mode.yaw !== undefined ? mode.yaw : yawW; } });
+    Object.entries(c.loads).forEach(([kk, l]) => { l.visible = !idle && load === kk; if (kk === 'beam') l.scale.x = mode && mode.L ? Math.max(1, mode.L - 0.6) : 8; if (l.visible) { if (kk === 'col') l.position.set(fx, c.hook.position.y - 1.5 - (G.LV2.C + 1.0 - SPLICE_C) / 2, fz); else l.position.set(fx, kk === 'beam' && bmL ? Math.min(tgt.y, c.hook.position.y - 0.45 - eS) - 0.35 : c.hook.position.y - 0.9, fz); l.rotation.y = mode && mode.yaw !== undefined ? mode.yaw : yawW; } });
+    if (!c.sling) { c.sling = new THREE.LineSegments(new THREE.BufferGeometry().setFromPoints([0, 1, 2, 3].map(() => new THREE.Vector3())), new THREE.LineBasicMaterial({ color: 0x222222 })); c.sling.frustumCulled = false; scene.add(c.sling); }
+    const Lb = c.loads.beam; c.sling.visible = Lb.visible && !!bmL;
+    if (c.sling.visible) { const cy = Math.cos(Lb.rotation.y), sy = Math.sin(Lb.rotation.y), top = Lb.position.y + 0.35, hb = c.hook.position.y - 0.45, sp = c.sling.geometry.attributes.position;
+      [-1, 1].forEach((s, i) => { sp.setXYZ(i * 2, c.hook.position.x, hb, c.hook.position.z); sp.setXYZ(i * 2 + 1, Lb.position.x + s * eS * cy, top, Lb.position.z - s * eS * sy); }); sp.needsUpdate = true; }
   }
   const mixQueue = {};
   // Pump trucks are vehicles on the same one-way paths: they drive in, pull diagonally into their stand (料區缺口),
